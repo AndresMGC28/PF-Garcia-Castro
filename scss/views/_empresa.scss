@@ -22,12 +22,14 @@ section.seccionempresa{
 
 div.mision{
     width: 90%;
+    height: 250px;
     border: 3px solid $colordos;
     background-color: $colorcinco;
     padding: 2%;
     margin: 10px auto;
     @include empresas(){
             width: 90%;
+            height: auto;
             padding: 5%;
             margin: auto;
             grid-area: mision;
@@ -36,12 +38,14 @@ div.mision{
     }
 div.vision{
     width: 90%;
+    height: 250px;
     border: 3px solid $colordos;
     background-color: $colorcinco;
     padding: 2%;
     margin: 10px auto;
     @include empresas(){
         width: 90%;
+        height: auto;
         padding: 5%;
         margin: auto;
         grid-area: vision;
@@ -49,12 +53,14 @@ div.vision{
 }
 div.quienes{
     width: 90%;
+    height: 250px;
     border: 3px solid $colordos;
     background-color: $colorcinco;
     padding: 2%;
     margin: 10px auto;
     @include empresas(){
         width: 90%;
+        height: auto;
         padding: 5%;
         margin: auto;
         grid-area: quien;

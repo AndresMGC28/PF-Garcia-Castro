@@ -464,6 +464,7 @@ article.articulodiseñodos {
 
 div.mision {
   width: 90%;
+  height: 250px;
   border: 3px solid blanchedalmond;
   background-color: rgb(214, 161, 203);
   padding: 2%;
@@ -472,6 +473,7 @@ div.mision {
 @media (min-width: 600px) {
   div.mision {
     width: 90%;
+    height: auto;
     padding: 5%;
     margin: auto;
     grid-area: mision;
@@ -480,6 +482,7 @@ div.mision {
 
 div.vision {
   width: 90%;
+  height: 250px;
   border: 3px solid blanchedalmond;
   background-color: rgb(214, 161, 203);
   padding: 2%;
@@ -488,6 +491,7 @@ div.vision {
 @media (min-width: 600px) {
   div.vision {
     width: 90%;
+    height: auto;
     padding: 5%;
     margin: auto;
     grid-area: vision;
@@ -496,6 +500,7 @@ div.vision {
 
 div.quienes {
   width: 90%;
+  height: 250px;
   border: 3px solid blanchedalmond;
   background-color: rgb(214, 161, 203);
   padding: 2%;
@@ -504,6 +509,7 @@ div.quienes {
 @media (min-width: 600px) {
   div.quienes {
     width: 90%;
+    height: auto;
     padding: 5%;
     margin: auto;
     grid-area: quien;

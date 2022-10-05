@@ -1,0 +1,81 @@
+@mixin empresas{
+    @media (min-width:$media-uno){
+        @content        
+    } 
+}
+section.seccionempresa{
+    @include empresas(){
+        background-color: $colortres;
+        display:grid;
+        width: 90%;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-areas:
+        "quien imagen"
+        "mision imagen"
+        "vision imagen";
+        gap: 10px;
+        padding: 20px;
+        margin:  10px auto;
+        }
+} 
+
+div.mision{
+    width: 90%;
+    border: 3px solid $colordos;
+    background-color: $colorcinco;
+    padding: 2%;
+    margin: 10px auto;
+    @include empresas(){
+            width: 90%;
+            padding: 5%;
+            margin: auto;
+            grid-area: mision;
+
+        }
+    }
+div.vision{
+    width: 90%;
+    border: 3px solid $colordos;
+    background-color: $colorcinco;
+    padding: 2%;
+    margin: 10px auto;
+    @include empresas(){
+        width: 90%;
+        padding: 5%;
+        margin: auto;
+        grid-area: vision;
+    }
+}
+div.quienes{
+    width: 90%;
+    border: 3px solid $colordos;
+    background-color: $colorcinco;
+    padding: 2%;
+    margin: 10px auto;
+    @include empresas(){
+        width: 90%;
+        padding: 5%;
+        margin: auto;
+        grid-area: quien;
+    }
+}
+div.imagenchico{
+    width: 100%;
+    height: 100%;
+    grid-area: imagen;
+    margin: 5px;
+    @include empresas(){
+
+        grid-area: imagen;
+        margin: auto;
+    }
+}   
+img.imagenempresa{
+    width: 0%;
+    @include empresas(){
+        border: 3px solid $coloruno;
+        width: 100%;
+        height: 100%;
+    }
+}

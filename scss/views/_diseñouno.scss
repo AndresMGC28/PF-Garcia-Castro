@@ -1,0 +1,80 @@
+@mixin diseño{
+    @media (min-width:$media-uno){
+        @content        
+    } 
+}
+div.porque{
+    width: 90vw;
+    background-color: $colortres;
+    background-size: cover;
+    background-position: center;
+    color:$colordos;
+    border: 3px solid $colordos;
+    text-align: center;
+    padding: 5px;
+    margin: 10px auto;
+}
+div.trabjosdiseño{
+    @include diseño(){
+        background-color: $colortres;
+        border: 3px solid $colordos;
+    display:grid;
+    width: 90vw;
+    height: 500px;
+    grid-template-columns: 70% 30%;
+    grid-template-areas:
+    "uno dos";
+    gap: 10px;
+    padding: 10px;
+    margin: 20px auto;
+}
+}
+div.trabajodiseñouno{
+    @include diseño(){
+    overflow: auto;
+    gap: 10px;
+    grid-area:uno;
+    background: url(../imagnes/espacio100.jpg);
+    background-size: cover;
+    background-position: center;
+}
+}
+div.trabajoimagen{
+    @include diseño(){
+    grid-area: dos;
+    }
+}
+
+article.articulodiseñodos{
+    width: 80vw;
+    height: 220px;
+    border: 3px solid $colordos;
+    background-color: $colorcinco;
+    padding: 2%;
+    margin: 10px auto;
+    overflow:auto;
+    text-align: center;
+    @include diseño(){
+        width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+}
+
+//imagenes
+.imagenpaleta{
+    width: 100%;
+    height: 140px;
+}
+.imagendiseño{
+    width: 100%;
+    height: 100%;
+}
+.imagenescaleras{
+    width: 00%;
+    @include diseño()
+    {
+        width: 95%;
+        height: 100%;
+    }
+}

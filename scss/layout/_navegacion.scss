@@ -1,0 +1,45 @@
+
+@mixin navegador{
+    @media (min-width:$media-uno){
+        @content        
+    } 
+}
+nav{
+    @include navegador(){
+    width: 51%;
+    display: inline-block;
+    flex-wrap: wrap;
+    align-self: flex-end;
+   } 
+}
+
+    
+
+ul{
+    list-style: none;
+    font-size: 1rem;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    padding: 5px;
+    li{
+        background-color:$colortres;
+        padding: 5px 1px;
+        border-radius: 10px;
+        border: $colorseis 1px solid;
+    }
+    a{
+            text-decoration: none;
+            color: $colordos;
+    }
+
+}
+li:hover{
+    background-color:$colorseis;
+    opacity: .5;
+    border-color:$colordos;
+    a{
+        text-decoration: none;
+        color: $coloruno;
+    }
+}

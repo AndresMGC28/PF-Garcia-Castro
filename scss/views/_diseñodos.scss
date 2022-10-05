@@ -1,0 +1,169 @@
+@mixin diseñodos{
+    @media (min-width:$media-uno){
+        @content        
+    } 
+}
+
+div.divpersonaliza{
+    background-color: $colorsiete;
+    border: 3px solid $colorseis;
+    width: 95%;
+    color:$colordos;
+    text-align: center;
+    padding: 10px;
+    margin: 15px auto;
+    @include diseñodos(){
+        width: 70%;
+        height: auto;
+        padding: 50px;
+    }
+}
+.espaciocolores{
+    width: 100%;
+    height: 200px;
+}
+
+
+.divbasestrabajos{
+    @include diseñodos(){
+    width: 80%;
+    display: flex;
+    margin: auto;
+    }
+}
+
+
+.articulodetrabajos{
+    width: 30%;
+    width: 95%;
+    text-align: center;
+    background-color: $colorsiete;
+    border: 3px solid $colorseis;
+    color: $colordos;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+    @include diseñodos(){
+        width: 30%;
+        }
+    }
+   
+
+div{
+    .cajas{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
+//botones trasformaciones y gardiantes
+div{
+    //Botones 
+    .boton1{
+        width: 75%;
+        background-color: $colorcinco;
+        border-radius: 10px;
+        border: 3px solid $coloruno;
+        color: $coloruno;
+        transition: all 1s;
+        margin: 10px auto;
+    }
+    .boton1:hover{
+        width: 90%;
+        background-color: $colordos;
+        border-radius: 10px;
+        border: 3px solid $coloruno;
+        color: $coloruno;
+    }
+    .boton2{
+        width: 75%;
+        background-color: $colorseis;
+        border-radius: 10px;
+        border: 3px solid $coloruno;
+        transition: all 1s; 
+        margin: 10px auto;
+    }
+    .boton2:hover{
+        width: 90%;
+        background-color: $coloruno;
+        border: 0px;
+        color: $colordos;
+        transition: all 1s;
+    }
+    
+    .boton3{
+        width: 75%;
+        background-color: $colorsiete;
+        border-radius: 10px;
+        border: 3px solid $coloruno;
+        color: $colordos;
+        transition: all 1s; 
+        margin: 10px auto;
+    }
+    .boton3:hover{
+        width: 90%;
+        background-color: $coloruno;
+        border-radius: 10px;
+        border: 3px solid $colortres;
+        color: $colordos;
+    }
+    // Cajas
+    .cajauno{
+        border-radius: 20px;
+        width: 25%;
+        height: 80px;
+        border: 3px solid $coloruno;
+        background-image: linear-gradient($colorcinco, $colorseis, $colorsiete );
+        margin: 10px auto;
+        @include diseñodos(){
+            width: 45%;
+            }
+    }
+    .cajados{
+        border-radius: 35px;
+        width: 25%;
+        height: 80px;
+        border: 3px solid $coloruno;
+        background-image: radial-gradient($colorcinco, $colorseis, $colorsiete );
+        margin: 10px auto;
+        @include diseñodos(){
+            width: 45%;
+            }
+    }
+    .cajatres{
+        border-radius: 100%;
+        width: 25%;
+        height: 80px;
+        border: 3px solid $coloruno;
+        background-image:linear-gradient(to left,$colordos 0%, $colorcinco 25%, $colorseis 50%, $colorsiete 75%);
+        margin: 10px auto;
+        @include diseñodos(){
+            width: 45%;
+            }  
+    }
+    //Trasformacion
+    .cajauno1{
+        border-radius: 20px;
+        width: 40%;
+        height: 80px;
+        border: 3px solid $coloruno;
+        background-image: linear-gradient($colorcinco, $colorseis, $colorsiete );
+        margin: 10px auto;
+        transition: all 1s;
+    }
+    .cajauno1:hover{
+        transform: skew(30deg)
+    }
+    .cajados2{
+        border-radius: 35px;
+        width: 40%;
+        height: 80px;
+        border: 3px solid $coloruno;
+        background-image: radial-gradient($colorcinco, $colorseis, $colorsiete );
+        margin: 10px auto;
+        transition: all 1s;    
+    }
+    .cajados2:hover{
+        transform: rotate(360deg)
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.1",
+    "bootstrap-icons": "^1.9.1",
+    "sass": "^1.55.0"
+  },
+  "name": "the-blackmoon",
+  "version": "1.0.0",
+  "description": "(Creacion de Pagina web)",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndresMGC28/PreEntrega2-Garcia-Castro.git"
+  },
+  "author": "Andres Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndresMGC28/PreEntrega2-Garcia-Castro/issues"
+  },
+  "homepage": "https://github.com/AndresMGC28/PreEntrega2-Garcia-Castro#readme"
+}

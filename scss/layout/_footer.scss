@@ -1,0 +1,32 @@
+footer{
+    width: 100%;
+    background-color: $coloruno;
+    color:$colordos;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin piedepagina {
+    @media (min-width:$media-uno){
+        @content    
+    }
+}
+i{
+    color:$colorseis;
+    @include piedepagina(){
+        margin:20px;        
+    }
+}
+
+    .contactos{
+    @include piedepagina(){
+        display: flex;
+        flex-wrap: wrap;       
+    }
+    
+}
+
+

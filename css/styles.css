@@ -1,0 +1,637 @@
+@charset "UTF-8";
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+h2, h3, h4, p, a {
+  font-family: "Cormorant", cursive, sans-serif;
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-family: "Berkshire Swash", cursive, sans-serif;
+  font-size: 2rem;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: blanchedalmond;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+i {
+  color: rgb(179, 0, 119);
+}
+@media (min-width: 600px) {
+  i {
+    margin: 20px;
+  }
+}
+
+@media (min-width: 600px) {
+  .contactos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+header {
+  width: 100%;
+  background-color: black;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+}
+@media (min-width: 600px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+  }
+}
+
+div.logotitulo {
+  font-size: 1rem;
+  color: blanchedalmond;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 600px) {
+  nav {
+    width: 51%;
+    display: inline-block;
+    flex-wrap: wrap;
+    align-self: flex-end;
+  }
+}
+
+ul {
+  list-style: none;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+ul li {
+  background-color: rgb(28, 8, 46);
+  padding: 5px 1px;
+  border-radius: 10px;
+  border: rgb(179, 0, 119) 1px solid;
+}
+ul a {
+  text-decoration: none;
+  color: blanchedalmond;
+}
+
+li:hover {
+  background-color: rgb(179, 0, 119);
+  opacity: 0.5;
+  border-color: blanchedalmond;
+}
+li:hover a {
+  text-decoration: none;
+  color: black;
+}
+
+input, textarea {
+  background-color: rgb(214, 161, 203);
+  border: 5px solid rgb(179, 0, 119);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+
+select {
+  background-color: rgb(214, 161, 203);
+  border: 3px solid rgb(179, 0, 119);
+  border-radius: 5px;
+  padding: 2px;
+  margin: 1px;
+}
+
+@media (min-width: 600px) {
+  section.secciondecontacto {
+    width: 90%;
+    background-color: rgb(34, 0, 34);
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-areas: "formulario imagenf";
+    gap: 1%;
+    padding: 10px;
+    margin: 20px auto;
+  }
+}
+
+div.articulodecontacto {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: rgb(28, 8, 46);
+  background-size: cover;
+  background-position: center;
+  color: rgb(214, 161, 203);
+  border: 3px solid rgb(214, 161, 203);
+  text-align: center;
+  padding: 5px;
+  margin: 10px auto;
+}
+@media (min-width: 600px) {
+  div.articulodecontacto {
+    width: 100%;
+    grid-area: formulario;
+  }
+}
+
+@media (min-width: 600px) {
+  div.divimagencontacto {
+    width: 100%;
+    grid-area: imagenf;
+  }
+}
+
+.imagendecontacto {
+  width: 0%;
+}
+@media (min-width: 600px) {
+  .imagendecontacto {
+    width: 98%;
+    height: 100%;
+  }
+}
+
+div.divtrabajos {
+  background-color: rgb(28, 8, 46);
+  overflow: auto;
+  width: 90%;
+  height: 120px;
+  display: flex;
+  border: 3px solid rgb(214, 161, 203);
+  padding: 5px;
+  margin: 10px auto;
+}
+@media (min-width: 600px) {
+  div.divtrabajos {
+    height: 200px;
+  }
+}
+
+.trabajocontacto {
+  border: 1px solid rgb(214, 161, 203);
+  width: 150px;
+  height: 80%;
+  margin: 10px;
+}
+@media (min-width: 600px) {
+  .trabajocontacto {
+    width: 300px;
+    height: 80%;
+    margin: 10px;
+  }
+}
+
+div.divpersonaliza {
+  background-color: rgb(34, 0, 34);
+  border: 3px solid rgb(179, 0, 119);
+  width: 95%;
+  color: blanchedalmond;
+  text-align: center;
+  padding: 10px;
+  margin: 15px auto;
+}
+@media (min-width: 600px) {
+  div.divpersonaliza {
+    width: 70%;
+    height: auto;
+    padding: 50px;
+  }
+}
+
+.espaciocolores {
+  width: 100%;
+  height: 200px;
+}
+
+@media (min-width: 600px) {
+  .divbasestrabajos {
+    width: 80%;
+    display: flex;
+    margin: auto;
+  }
+}
+
+.articulodetrabajos {
+  width: 30%;
+  width: 95%;
+  text-align: center;
+  background-color: rgb(34, 0, 34);
+  border: 3px solid rgb(179, 0, 119);
+  color: blanchedalmond;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px auto;
+}
+@media (min-width: 600px) {
+  .articulodetrabajos {
+    width: 30%;
+  }
+}
+
+div .cajas {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div .boton1 {
+  width: 75%;
+  background-color: rgb(214, 161, 203);
+  border-radius: 10px;
+  border: 3px solid black;
+  color: black;
+  transition: all 1s;
+  margin: 10px auto;
+}
+div .boton1:hover {
+  width: 90%;
+  background-color: blanchedalmond;
+  border-radius: 10px;
+  border: 3px solid black;
+  color: black;
+}
+div .boton2 {
+  width: 75%;
+  background-color: rgb(179, 0, 119);
+  border-radius: 10px;
+  border: 3px solid black;
+  transition: all 1s;
+  margin: 10px auto;
+}
+div .boton2:hover {
+  width: 90%;
+  background-color: black;
+  border: 0px;
+  color: blanchedalmond;
+  transition: all 1s;
+}
+div .boton3 {
+  width: 75%;
+  background-color: rgb(34, 0, 34);
+  border-radius: 10px;
+  border: 3px solid black;
+  color: blanchedalmond;
+  transition: all 1s;
+  margin: 10px auto;
+}
+div .boton3:hover {
+  width: 90%;
+  background-color: black;
+  border-radius: 10px;
+  border: 3px solid rgb(28, 8, 46);
+  color: blanchedalmond;
+}
+div .cajauno {
+  border-radius: 20px;
+  width: 25%;
+  height: 80px;
+  border: 3px solid black;
+  background-image: linear-gradient(rgb(214, 161, 203), rgb(179, 0, 119), rgb(34, 0, 34));
+  margin: 10px auto;
+}
+@media (min-width: 600px) {
+  div .cajauno {
+    width: 45%;
+  }
+}
+div .cajados {
+  border-radius: 35px;
+  width: 25%;
+  height: 80px;
+  border: 3px solid black;
+  background-image: radial-gradient(rgb(214, 161, 203), rgb(179, 0, 119), rgb(34, 0, 34));
+  margin: 10px auto;
+}
+@media (min-width: 600px) {
+  div .cajados {
+    width: 45%;
+  }
+}
+div .cajatres {
+  border-radius: 100%;
+  width: 25%;
+  height: 80px;
+  border: 3px solid black;
+  background-image: linear-gradient(to left, blanchedalmond 0%, rgb(214, 161, 203) 25%, rgb(179, 0, 119) 50%, rgb(34, 0, 34) 75%);
+  margin: 10px auto;
+}
+@media (min-width: 600px) {
+  div .cajatres {
+    width: 45%;
+  }
+}
+div .cajauno1 {
+  border-radius: 20px;
+  width: 40%;
+  height: 80px;
+  border: 3px solid black;
+  background-image: linear-gradient(rgb(214, 161, 203), rgb(179, 0, 119), rgb(34, 0, 34));
+  margin: 10px auto;
+  transition: all 1s;
+}
+div .cajauno1:hover {
+  transform: skew(30deg);
+}
+div .cajados2 {
+  border-radius: 35px;
+  width: 40%;
+  height: 80px;
+  border: 3px solid black;
+  background-image: radial-gradient(rgb(214, 161, 203), rgb(179, 0, 119), rgb(34, 0, 34));
+  margin: 10px auto;
+  transition: all 1s;
+}
+div .cajados2:hover {
+  transform: rotate(360deg);
+}
+
+div.porque {
+  width: 90vw;
+  background-color: rgb(28, 8, 46);
+  background-size: cover;
+  background-position: center;
+  color: blanchedalmond;
+  border: 3px solid blanchedalmond;
+  text-align: center;
+  padding: 5px;
+  margin: 10px auto;
+}
+
+@media (min-width: 600px) {
+  div.trabjosdiseño {
+    background-color: rgb(28, 8, 46);
+    border: 3px solid blanchedalmond;
+    display: grid;
+    width: 90vw;
+    height: 500px;
+    grid-template-columns: 70% 30%;
+    grid-template-areas: "uno dos";
+    gap: 10px;
+    padding: 10px;
+    margin: 20px auto;
+  }
+}
+
+@media (min-width: 600px) {
+  div.trabajodiseñouno {
+    overflow: auto;
+    gap: 10px;
+    grid-area: uno;
+    background: url(../imagnes/espacio100.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (min-width: 600px) {
+  div.trabajoimagen {
+    grid-area: dos;
+  }
+}
+
+article.articulodiseñodos {
+  width: 80vw;
+  height: 220px;
+  border: 3px solid blanchedalmond;
+  background-color: rgb(214, 161, 203);
+  padding: 2%;
+  margin: 10px auto;
+  overflow: auto;
+  text-align: center;
+}
+@media (min-width: 600px) {
+  article.articulodiseñodos {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+  }
+}
+
+.imagenpaleta {
+  width: 100%;
+  height: 140px;
+}
+
+.imagendiseño {
+  width: 100%;
+  height: 100%;
+}
+
+.imagenescaleras {
+  width: 0%;
+}
+@media (min-width: 600px) {
+  .imagenescaleras {
+    width: 95%;
+    height: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  section.seccionempresa {
+    background-color: rgb(28, 8, 46);
+    display: grid;
+    width: 90%;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: "quien imagen" "mision imagen" "vision imagen";
+    gap: 10px;
+    padding: 20px;
+    margin: 10px auto;
+  }
+}
+
+div.mision {
+  width: 90%;
+  border: 3px solid blanchedalmond;
+  background-color: rgb(214, 161, 203);
+  padding: 2%;
+  margin: 10px auto;
+}
+@media (min-width: 600px) {
+  div.mision {
+    width: 90%;
+    padding: 5%;
+    margin: auto;
+    grid-area: mision;
+  }
+}
+
+div.vision {
+  width: 90%;
+  border: 3px solid blanchedalmond;
+  background-color: rgb(214, 161, 203);
+  padding: 2%;
+  margin: 10px auto;
+}
+@media (min-width: 600px) {
+  div.vision {
+    width: 90%;
+    padding: 5%;
+    margin: auto;
+    grid-area: vision;
+  }
+}
+
+div.quienes {
+  width: 90%;
+  border: 3px solid blanchedalmond;
+  background-color: rgb(214, 161, 203);
+  padding: 2%;
+  margin: 10px auto;
+}
+@media (min-width: 600px) {
+  div.quienes {
+    width: 90%;
+    padding: 5%;
+    margin: auto;
+    grid-area: quien;
+  }
+}
+
+div.imagenchico {
+  width: 100%;
+  height: 100%;
+  grid-area: imagen;
+  margin: 5px;
+}
+@media (min-width: 600px) {
+  div.imagenchico {
+    grid-area: imagen;
+    margin: auto;
+  }
+}
+
+img.imagenempresa {
+  width: 0%;
+}
+@media (min-width: 600px) {
+  img.imagenempresa {
+    border: 3px solid black;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+body {
+  width: 100%;
+  background-image: url(../../imagnes/6.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  width: 100%;
+}
+
+div.subtitulo {
+  width: 100%;
+  background-color: rgb(214, 161, 203);
+  text-align: center;
+  padding: 1px;
+  line-height: 20px;
+}
+@media (min-width: 600px) {
+  div.subtitulo {
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px;
+  }
+}
+
+div.divarticulos article.articleindex {
+  width: 90%;
+  background-color: rgb(214, 161, 203);
+  border: 3px solid blanchedalmond;
+  padding: 2%;
+  margin: 10px auto;
+}
+div.divarticulos h3 {
+  line-height: 20px;
+  text-align: center;
+}
+@media (min-width: 600px) {
+  div.divarticulos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  div.divarticulos article.articleindex {
+    width: 30%;
+    padding: 1%;
+    margin: 70px auto;
+  }
+}
+
+.imagenindex {
+  width: 100%;
+}
+
+.divaidex {
+  text-align: center;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.aindex {
+  justify-content: space-around;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(179, 0, 119);
+  padding: 5px 1px;
+  border-radius: 100px;
+  border: rgb(28, 8, 46) 3px solid;
+  text-decoration: none;
+  text-align: center;
+  color: blanchedalmond;
+  margin: 2px auto;
+}
+
+.aindex:hover {
+  background-color: blanchedalmond;
+  border: rgb(179, 0, 119) 3px solid;
+  color: black;
+}
+
+div.imagencoferencia {
+  background-color: rgb(34, 0, 34);
+  border: blanchedalmond 3px solid;
+  width: 90%;
+  height: 150px;
+  padding: 5px;
+  margin: 10px auto;
+}
+@media (min-width: 600px) {
+  div.imagencoferencia {
+    height: 300px;
+  }
+}
+
+.coferencia {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */

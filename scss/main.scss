@@ -1,0 +1,18 @@
+@import './utilities/variables';
+
+@import './base/reset';
+@import './base/tipografia';
+
+@import './layout/footer';
+@import './layout/forms';
+@import './layout/header';
+@import './layout/navegacion';
+
+@import './views/contacto';
+@import './views/diseñodos';
+@import './views/diseñouno';
+@import './views/empresa';
+@import './views/home';
+
+//sass scss/main.scss css/styles.css
+//sass --watch scss/main.scss css/styles.css

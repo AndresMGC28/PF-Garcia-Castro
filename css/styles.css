@@ -26,11 +26,11 @@ footer {
   text-align: center;
 }
 
-i {
+img {
   color: rgb(179, 0, 119);
 }
 @media (min-width: 600px) {
-  i {
+  img {
     margin: 20px;
   }
 }

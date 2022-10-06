@@ -14,7 +14,7 @@ footer{
         @content    
     }
 }
-i{
+img{
     color:$colorseis;
     @include piedepagina(){
         margin:20px;        

@@ -18,14 +18,15 @@ header{
         position: sticky;
         top: 0%;
         z-index: 1;
-    }
-    
+    }   
 }
-
-div.logotitulo{
-    font-size: 1rem;
-    color: $colordos;
+div.titulo{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+a.titulo{
+    text-decoration: none;
+    color: $colordos;
+    padding: 5px;
+    }

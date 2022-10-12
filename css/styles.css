@@ -12,15 +12,15 @@ h2, h3, h4, p, a {
 
 h1 {
   font-family: "Berkshire Swash", cursive, sans-serif;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 footer {
   width: 100%;
   background-color: black;
-  color: blanchedalmond;
+  color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-align: center;
@@ -29,12 +29,6 @@ footer {
 img {
   color: rgb(179, 0, 119);
 }
-@media (min-width: 600px) {
-  img {
-    margin: 10px;
-  }
-}
-
 @media (min-width: 600px) {
   .contactos {
     display: flex;
@@ -61,17 +55,21 @@ header {
   }
 }
 
-div.logotitulo {
-  font-size: 1rem;
-  color: blanchedalmond;
+div.titulo {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+a.titulo {
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
 @media (min-width: 600px) {
   nav {
-    width: 51%;
+    width: 50%;
     display: inline-block;
     flex-wrap: wrap;
     align-self: flex-end;
@@ -80,7 +78,6 @@ div.logotitulo {
 
 ul {
   list-style: none;
-  font-size: 1rem;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -94,13 +91,14 @@ ul li {
 }
 ul a {
   text-decoration: none;
-  color: blanchedalmond;
+  color: white;
+  font-size: 1.2rem;
 }
 
 li:hover {
   background-color: rgb(179, 0, 119);
   opacity: 0.5;
-  border-color: blanchedalmond;
+  border-color: white;
 }
 li:hover a {
   text-decoration: none;
@@ -207,7 +205,7 @@ div.divpersonaliza {
   background-color: rgb(34, 0, 34);
   border: 3px solid rgb(179, 0, 119);
   width: 95%;
-  color: blanchedalmond;
+  color: white;
   text-align: center;
   padding: 10px;
   margin: 15px auto;
@@ -239,7 +237,7 @@ div.divpersonaliza {
   text-align: center;
   background-color: rgb(34, 0, 34);
   border: 3px solid rgb(179, 0, 119);
-  color: blanchedalmond;
+  color: white;
   border-radius: 10px;
   padding: 10px;
   margin: 10px auto;
@@ -266,7 +264,7 @@ div .boton1 {
 }
 div .boton1:hover {
   width: 90%;
-  background-color: blanchedalmond;
+  background-color: white;
   border-radius: 10px;
   border: 3px solid black;
   color: black;
@@ -283,7 +281,7 @@ div .boton2:hover {
   width: 90%;
   background-color: black;
   border: 0px;
-  color: blanchedalmond;
+  color: white;
   transition: all 1s;
 }
 div .boton3 {
@@ -291,7 +289,7 @@ div .boton3 {
   background-color: rgb(34, 0, 34);
   border-radius: 10px;
   border: 3px solid black;
-  color: blanchedalmond;
+  color: white;
   transition: all 1s;
   margin: 10px auto;
 }
@@ -300,7 +298,7 @@ div .boton3:hover {
   background-color: black;
   border-radius: 10px;
   border: 3px solid rgb(28, 8, 46);
-  color: blanchedalmond;
+  color: white;
 }
 div .cajauno {
   border-radius: 20px;
@@ -333,7 +331,7 @@ div .cajatres {
   width: 25%;
   height: 80px;
   border: 3px solid black;
-  background-image: linear-gradient(to left, blanchedalmond 0%, rgb(214, 161, 203) 25%, rgb(179, 0, 119) 50%, rgb(34, 0, 34) 75%);
+  background-image: linear-gradient(to left, white 0%, rgb(214, 161, 203) 25%, rgb(179, 0, 119) 50%, rgb(34, 0, 34) 75%);
   margin: 10px auto;
 }
 @media (min-width: 600px) {
@@ -371,8 +369,8 @@ div.porque {
   background-color: rgb(28, 8, 46);
   background-size: cover;
   background-position: center;
-  color: blanchedalmond;
-  border: 3px solid blanchedalmond;
+  color: white;
+  border: 3px solid white;
   text-align: center;
   padding: 5px;
   margin: 10px auto;
@@ -381,7 +379,7 @@ div.porque {
 @media (min-width: 600px) {
   div.trabjosdiseño {
     background-color: rgb(28, 8, 46);
-    border: 3px solid blanchedalmond;
+    border: 3px solid white;
     display: grid;
     width: 90vw;
     height: 500px;
@@ -413,7 +411,7 @@ div.porque {
 article.articulodiseñodos {
   width: 80vw;
   height: 220px;
-  border: 3px solid blanchedalmond;
+  border: 3px solid white;
   background-color: rgb(214, 161, 203);
   padding: 2%;
   margin: 10px auto;
@@ -465,7 +463,7 @@ article.articulodiseñodos {
 div.mision {
   width: 90%;
   height: 250px;
-  border: 3px solid blanchedalmond;
+  border: 3px solid white;
   background-color: rgb(214, 161, 203);
   padding: 2%;
   margin: 10px auto;
@@ -483,7 +481,7 @@ div.mision {
 div.vision {
   width: 90%;
   height: 250px;
-  border: 3px solid blanchedalmond;
+  border: 3px solid white;
   background-color: rgb(214, 161, 203);
   padding: 2%;
   margin: 10px auto;
@@ -501,7 +499,7 @@ div.vision {
 div.quienes {
   width: 90%;
   height: 250px;
-  border: 3px solid blanchedalmond;
+  border: 3px solid white;
   background-color: rgb(214, 161, 203);
   padding: 2%;
   margin: 10px auto;
@@ -559,7 +557,7 @@ div.subtitulo {
 }
 @media (min-width: 600px) {
   div.subtitulo {
-    width: 90%;
+    width: 95%;
     margin: 5px auto;
     padding: 10px;
   }
@@ -568,7 +566,7 @@ div.subtitulo {
 div.divarticulos article.articleindex {
   width: 90%;
   background-color: rgb(214, 161, 203);
-  border: 3px solid blanchedalmond;
+  border: 3px solid white;
   padding: 2%;
   margin: 10px auto;
 }
@@ -609,19 +607,19 @@ div.divarticulos h3 {
   border: rgb(28, 8, 46) 3px solid;
   text-decoration: none;
   text-align: center;
-  color: blanchedalmond;
+  color: white;
   margin: 2px auto;
 }
 
 .aindex:hover {
-  background-color: blanchedalmond;
+  background-color: white;
   border: rgb(179, 0, 119) 3px solid;
   color: black;
 }
 
 div.imagencoferencia {
   background-color: rgb(34, 0, 34);
-  border: blanchedalmond 3px solid;
+  border: white 3px solid;
   width: 90%;
   height: 150px;
   padding: 5px;

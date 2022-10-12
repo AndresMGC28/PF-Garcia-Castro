@@ -1,23 +1,22 @@
+@mixin piedepagina {
+    @media (min-width:$media-uno){
+        @content    
+    }
+}   
 footer{
     width: 100%;
     background-color: $coloruno;
     color:$colordos;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: center;
 }
 
-@mixin piedepagina {
-    @media (min-width:$media-uno){
-        @content    
-    }
-}
 img{
     color:$colorseis;
-    @include piedepagina(){
-        margin:10px;        
+    @include piedepagina(){        
     }
 }
 

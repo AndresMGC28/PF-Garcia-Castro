@@ -6,18 +6,14 @@
 }
 nav{
     @include navegador(){
-    width: 51%;
+    width: 50%;
     display: inline-block;
     flex-wrap: wrap;
     align-self: flex-end;
    } 
 }
-
-    
-
 ul{
     list-style: none;
-    font-size: 1rem;
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;
@@ -31,8 +27,8 @@ ul{
     a{
             text-decoration: none;
             color: $colordos;
+            font-size: 1.2rem;
     }
-
 }
 li:hover{
     background-color:$colorseis;

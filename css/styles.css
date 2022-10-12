@@ -20,20 +20,16 @@ footer {
   background-color: black;
   color: white;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   text-align: center;
 }
 
-img {
-  color: rgb(179, 0, 119);
-}
-@media (min-width: 600px) {
-  .contactos {
-    display: flex;
-    flex-wrap: wrap;
-  }
+div.redessociales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px;
 }
 
 header {
@@ -84,24 +80,27 @@ ul {
   padding: 5px;
 }
 ul li {
-  background-color: rgb(28, 8, 46);
-  padding: 5px 1px;
+  background-color: black;
+  padding: 5px 2px;
   border-radius: 10px;
-  border: rgb(179, 0, 119) 1px solid;
+  border: white 1px solid;
 }
 ul a {
   text-decoration: none;
   color: white;
-  font-size: 1.2rem;
 }
 
 li:hover {
-  background-color: rgb(179, 0, 119);
-  opacity: 0.5;
+  background-color: white;
+  opacity: 0.9;
   border-color: white;
 }
+@media (min-width: 600px) {
+  li:hover {
+    padding: 5px 15px;
+  }
+}
 li:hover a {
-  text-decoration: none;
   color: black;
 }
 

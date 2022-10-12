@@ -8,24 +8,16 @@ footer{
     background-color: $coloruno;
     color:$colordos;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     text-align: center;
 }
 
-img{
-    color:$colorseis;
-    @include piedepagina(){        
-    }
-}
-
-    .contactos{
-    @include piedepagina(){
+div.redessociales{
         display: flex;
-        flex-wrap: wrap;       
-    }
-    
-}
+        flex-direction: row;
+        justify-content: space-around; 
+        margin-top: 10px;           
+    }   
 
 

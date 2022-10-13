@@ -1,7 +1,27 @@
-
+@mixin letras{
+    @media (min-width:$media-uno) and (max-width:$media-dos){
+        @content        
+    } 
+}
+@mixin letrasdos{
+    @media (min-width:$media-dos){
+        @content        
+    } 
+}
 h2, h3, h4, p, a{
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.2rem;
+}
+h2.segundotitulo{
+    font-weight: 500;
+    font-size: 1.8rem;
+    @include letras(){
+        font-size: 3.5rem;
+    }
+    @include letrasdos(){
+        font-size: 5rem;
+       } 
+
 }
 h1{
     font-family: 'Berkshire Swash',cursive,sans-serif;

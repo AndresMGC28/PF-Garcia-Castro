@@ -5,44 +5,59 @@ body{
 main{
     width: 100%;
 }
-@mixin index{
+@mixin inicio{
     @media (min-width:$media-uno){
         @content        
     } 
 }
 div.uno{
-    background-color: aqua;
+    width: 95%;
+    background-color:$colortres;
     display: flex;
     justify-items: center;
-
     color: $colordos;
-
+    align-items: center;
+    margin: 5px auto;
+    border-radius: 10px;
 }
-div.subtitulo{
+div{
+    .logouno{
+        width: 45%;
+        margin: 10px auto;
+    }   
+    .pagina{
+        width: 45%;
+        margin: auto;
+        
+    }
+}
+.logo{
     width: 100%;
-    background-color: $colortres;
-    text-align: center;
-    padding: 1px;
-    line-height: 20px; 
-    @include index(){
-        width: 95%;
-        margin: 5px auto;
-        padding: 10px;
-   } 
+    border-radius: 20px;
 }
-div.divarticulos{
-       article.articleindex{
-        width: 90%;
-        background-color: $colorcinco;
-        border: 3px solid $colordos;
+
+div{
+   article.articleindex{
+        width: 80%;
+        background-color: $colordos;
         padding: 2%;
         margin: 10px auto;
+        transition: all 1s;
     }
+    article.articleindex:hover{
+        width: 85%;
+        background-color: $coloruno;
+        border: 2px solid $colordos;
+        padding: 2%;
+        margin: 10px auto;
+        color: $colordos;
+    }
+
     h3{
         line-height: 20px;
         text-align: center;
     }
-    @include index(){
+    @include inicio(){
         display: flex;
         flex-wrap: wrap;
         article.articleindex{
@@ -81,18 +96,17 @@ div.divarticulos{
     border: $colorseis 3px solid;
     color:$coloruno;
 }
-div.imagencoferencia{
-    background-color: $colorsiete;
-    border: $colordos 3px solid;
-    width: 90%;
-    height: 150px;
-    padding: 5px;
-    margin: 10px auto;
-    @include index(){
-        height: 300px;
-    }
-}
-.coferencia{
+
+//Este lo comparte las demas paginas
+div.subtitulo{
     width: 100%;
-    height: 100%;
+    background-color: $colortres;
+    text-align: center;
+    padding: 1px;
+    line-height: 20px; 
+    @include inicio(){
+        width: 95%;
+        margin: 5px auto;
+        padding: 10px;
+   } 
 }

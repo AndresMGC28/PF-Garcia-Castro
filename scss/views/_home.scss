@@ -1,6 +1,6 @@
 body{
     width: 100%;
-    background-color: $colordies;
+    background-color: $coloruno;
 }
 main{
     width: 100%;
@@ -10,9 +10,17 @@ main{
         @content        
     } 
 }
+div.uno{
+    background-color: aqua;
+    display: flex;
+    justify-items: center;
+
+    color: $colordos;
+
+}
 div.subtitulo{
     width: 100%;
-    background-color: $colorcinco;
+    background-color: $colortres;
     text-align: center;
     padding: 1px;
     line-height: 20px; 
@@ -20,10 +28,8 @@ div.subtitulo{
         width: 95%;
         margin: 5px auto;
         padding: 10px;
-
    } 
 }
-   
 div.divarticulos{
        article.articleindex{
         width: 90%;

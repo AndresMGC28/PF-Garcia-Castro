@@ -5,7 +5,7 @@
 }
 nav{
     @include navegador(){
-    width: 50%;
+    width: 55%;
     display: inline-block;
     flex-wrap: wrap;
     align-self: flex-end;
@@ -16,12 +16,15 @@ ul{
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;
-    padding: 5px;
+    padding: 10px;
     li{
         background-color:$coloruno;
-        padding: 5px 2px;
+        padding: 2px 1px;
         border-radius: 10px;
         border: $colordos 1px solid;
+        @include navegador(){
+            padding: 5px 1px;
+        }
     }
     a{
             text-decoration: none;

@@ -11,13 +11,24 @@ footer{
     flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
+    @include piedepagina(){
+        padding: 8px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
 }
 
 div.redessociales{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around; 
-        margin-top: 10px;           
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    margin-top: 10px;   
+    @include piedepagina(){
+        width: 20%;
+
+    }        
     }   
 
 

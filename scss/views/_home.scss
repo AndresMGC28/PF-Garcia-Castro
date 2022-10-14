@@ -10,6 +10,11 @@ main{
         @content        
     } 
 }
+@mixin articulos2{
+    @media (min-width:$media-dos){
+        @content        
+    } 
+}
 div.uno{
     width: 95%;
     background-color:$colortres;
@@ -38,34 +43,46 @@ div{
 
 div{
    article.articleindex{
-        width: 80%;
-        background-color: $colordos;
+        width: 75%;
+        background-color: $coloruno;
+        border: 2px dashed $colordos;
         padding: 2%;
-        margin: 10px auto;
+        margin: 15px auto;
         transition: all 1s;
+        color: $colordos;
     }
     article.articleindex:hover{
         width: 85%;
-        background-color: $coloruno;
-        border: 2px solid $colordos;
-        padding: 2%;
-        margin: 10px auto;
-        color: $colordos;
+        background-color: $colordos;
+        border: 2px solid $coloruno;
+        color: $coloruno;
+        @include inicio(){
+            width: 45%;
+        }
+        @include articulos2(){
+            width: 35%;
+        }
     }
-
     h3{
         line-height: 20px;
         text-align: center;
     }
     @include inicio(){
         display: flex;
+        justify-content: space-around;
         flex-wrap: wrap;
         article.articleindex{
-            width: 30%;
-            padding: 1%;
-            margin: 70px auto;
+            width: 40%;
+            margin: 15px;
         }
-    }
+    @include articulos2(){
+        article.articleindex{
+            width: 30%;
+            margin: 15px auto;
+
+            }
+        }
+    }    
 }
 //Imagenes 
 .imagenindex{
@@ -73,7 +90,7 @@ div{
 }
 .divaidex{
     text-align: center;
-    width: 100%;
+    width: 90%;
     margin: 10px auto;
 
 }
@@ -82,19 +99,19 @@ div{
     width: 50%;
     display: flex;
     flex-wrap: wrap;
-    background-color:$colorseis;
-    padding: 5px 1px;
+    background-color:$colordos;
+    padding: 1px auto;
     border-radius: 100px; 
     border: $colortres 3px solid;
     text-decoration: none;
     text-align: center;
-    color: $colordos;
-    margin:  2px auto;
+    color: $coloruno;
+    margin: 5px auto;
 }
 .aindex:hover{
-    background-color:$colordos;
-    border: $colorseis 3px solid;
-    color:$coloruno;
+    background-color:$coloruno;
+    border: $colortres 3px solid;
+    color:$colordos;
 }
 
 //Este lo comparte las demas paginas

@@ -22,6 +22,7 @@ ul{
         padding: 2px 1px;
         border-radius: 10px;
         border: $colordos 1px solid;
+        transition: all 1s;
         @include navegador(){
             padding: 5px 1px;
         }
@@ -36,6 +37,7 @@ li:hover{
     background-color:$colordos;
     opacity: .9;
     border-color:$colordos;
+    padding: 2px 5px;
     @include navegador{
         padding: 5px 15px;
     }

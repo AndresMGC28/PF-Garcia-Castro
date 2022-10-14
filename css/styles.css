@@ -112,6 +112,7 @@ ul li {
   padding: 2px 1px;
   border-radius: 10px;
   border: white 1px solid;
+  transition: all 1s;
 }
 @media (min-width: 650px) {
   ul li {
@@ -127,6 +128,7 @@ li:hover {
   background-color: white;
   opacity: 0.9;
   border-color: white;
+  padding: 2px 5px;
 }
 @media (min-width: 650px) {
   li:hover {
@@ -606,19 +608,29 @@ div .pagina {
 }
 
 div article.articleindex {
-  width: 80%;
-  background-color: white;
+  width: 75%;
+  background-color: black;
+  border: 2px dashed white;
   padding: 2%;
-  margin: 10px auto;
+  margin: 15px auto;
   transition: all 1s;
+  color: white;
 }
 div article.articleindex:hover {
   width: 85%;
-  background-color: black;
-  border: 2px solid white;
-  padding: 2%;
-  margin: 10px auto;
-  color: white;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+@media (min-width: 650px) {
+  div article.articleindex:hover {
+    width: 45%;
+  }
+}
+@media (min-width: 900px) {
+  div article.articleindex:hover {
+    width: 35%;
+  }
 }
 div h3 {
   line-height: 20px;
@@ -627,12 +639,18 @@ div h3 {
 @media (min-width: 650px) {
   div {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
   div article.articleindex {
+    width: 40%;
+    margin: 15px;
+  }
+}
+@media (min-width: 650px) and (min-width: 900px) {
+  div article.articleindex {
     width: 30%;
-    padding: 1%;
-    margin: 70px auto;
+    margin: 15px auto;
   }
 }
 
@@ -642,7 +660,7 @@ div h3 {
 
 .divaidex {
   text-align: center;
-  width: 100%;
+  width: 90%;
   margin: 10px auto;
 }
 
@@ -651,20 +669,20 @@ div h3 {
   width: 50%;
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(179, 0, 119);
-  padding: 5px 1px;
+  background-color: white;
+  padding: 1px auto;
   border-radius: 100px;
   border: rgb(22, 22, 22) 3px solid;
   text-decoration: none;
   text-align: center;
-  color: white;
-  margin: 2px auto;
+  color: black;
+  margin: 5px auto;
 }
 
 .aindex:hover {
-  background-color: white;
-  border: rgb(179, 0, 119) 3px solid;
-  color: black;
+  background-color: black;
+  border: rgb(22, 22, 22) 3px solid;
+  color: white;
 }
 
 div.subtitulo {

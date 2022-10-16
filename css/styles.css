@@ -608,19 +608,15 @@ div .pagina {
 }
 
 div article.articleindex {
-  width: 75%;
+  width: 70%;
   background-color: black;
-  border: 2px dashed white;
-  padding: 2%;
-  margin: 15px auto;
+  padding: 15px;
+  margin: auto;
   transition: all 1s;
   color: white;
 }
 div article.articleindex:hover {
-  width: 85%;
-  background-color: white;
-  border: 2px solid black;
-  color: black;
+  width: 75%;
 }
 @media (min-width: 650px) {
   div article.articleindex:hover {
@@ -629,7 +625,7 @@ div article.articleindex:hover {
 }
 @media (min-width: 900px) {
   div article.articleindex:hover {
-    width: 35%;
+    width: 28%;
   }
 }
 div h3 {
@@ -649,9 +645,19 @@ div h3 {
 }
 @media (min-width: 650px) and (min-width: 900px) {
   div article.articleindex {
-    width: 30%;
+    width: 25%;
     margin: 15px auto;
   }
+}
+
+.prueba {
+  width: 300px;
+  background-image: url(../../imagnes/11.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+  text-decoration: none;
+  color: aliceblue;
 }
 
 .imagenindex {
@@ -666,11 +672,11 @@ div h3 {
 
 .aindex {
   justify-content: space-around;
-  width: 50%;
+  width: 45%;
   display: flex;
   flex-wrap: wrap;
   background-color: white;
-  padding: 1px auto;
+  padding: 2px auto;
   border-radius: 100px;
   border: rgb(22, 22, 22) 3px solid;
   text-decoration: none;

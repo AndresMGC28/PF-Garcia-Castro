@@ -43,24 +43,20 @@ div{
 
 div{
    article.articleindex{
-        width: 75%;
+        width: 70%;
         background-color: $coloruno;
-        border: 2px dashed $colordos;
-        padding: 2%;
-        margin: 15px auto;
+        padding: 15px;
+        margin: auto;
         transition: all 1s;
         color: $colordos;
     }
-    article.articleindex:hover{
-        width: 85%;
-        background-color: $colordos;
-        border: 2px solid $coloruno;
-        color: $coloruno;
+    article.articleindex:hover {
+        width: 75%;
         @include inicio(){
             width: 45%;
         }
         @include articulos2(){
-            width: 35%;
+            width: 28%;
         }
     }
     h3{
@@ -77,12 +73,21 @@ div{
         }
     @include articulos2(){
         article.articleindex{
-            width: 30%;
+            width: 25%;
             margin: 15px auto;
 
             }
         }
     }    
+}
+.prueba{
+    width: 300px;
+    background-image: url(../../imagnes/11.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    text-decoration: none;
+    color: aliceblue;
 }
 //Imagenes 
 .imagenindex{
@@ -96,11 +101,11 @@ div{
 }
 .aindex{
     justify-content:space-around;
-    width: 50%;
+    width: 45%;
     display: flex;
     flex-wrap: wrap;
     background-color:$colordos;
-    padding: 1px auto;
+    padding: 2px auto;
     border-radius: 100px; 
     border: $colortres 3px solid;
     text-decoration: none;

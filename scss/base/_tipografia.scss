@@ -8,13 +8,17 @@
         @content        
     } 
 }
-h2, h3, h4, p, a{
+h4, p, a{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+}
+h2, h3{
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.2rem;
 }
 h2.segundotitulo{
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     @include letras(){
         font-size: 3.5rem;
     }

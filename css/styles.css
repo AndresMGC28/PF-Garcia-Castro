@@ -5,14 +5,19 @@
   box-sizing: border-box;
 }
 
-h2, h3, h4, p, a {
+h4, p, a {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.2rem;
+}
+
+h2, h3 {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.2rem;
 }
 
 h2.segundotitulo {
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 @media (min-width: 650px) and (max-width: 900px) {
   h2.segundotitulo {
@@ -172,7 +177,7 @@ div.articulodecontacto {
   display: flex;
   flex-direction: column;
   width: 80%;
-  background-color: rgb(22, 22, 22);
+  background-color: rgb(12, 12, 12);
   background-size: cover;
   background-position: center;
   color: rgb(214, 161, 203);
@@ -206,7 +211,7 @@ div.articulodecontacto {
 }
 
 div.divtrabajos {
-  background-color: rgb(22, 22, 22);
+  background-color: rgb(12, 12, 12);
   overflow: auto;
   width: 90%;
   height: 120px;
@@ -331,7 +336,7 @@ div .boton3:hover {
   width: 90%;
   background-color: black;
   border-radius: 10px;
-  border: 3px solid rgb(22, 22, 22);
+  border: 3px solid rgb(12, 12, 12);
   color: white;
 }
 div .cajauno {
@@ -400,7 +405,7 @@ div .cajados2:hover {
 
 div.porque {
   width: 90vw;
-  background-color: rgb(22, 22, 22);
+  background-color: rgb(12, 12, 12);
   background-size: cover;
   background-position: center;
   color: white;
@@ -412,7 +417,7 @@ div.porque {
 
 @media (min-width: 650px) {
   div.trabjosdiseño {
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(12, 12, 12);
     border: 3px solid white;
     display: grid;
     width: 90vw;
@@ -482,7 +487,7 @@ article.articulodiseñodos {
 
 @media (min-width: 650px) {
   section.seccionempresa {
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(12, 12, 12);
     display: grid;
     width: 90%;
     grid-template-columns: 70% 30%;
@@ -575,7 +580,7 @@ img.imagenempresa {
 
 body {
   width: 100%;
-  background-color: black;
+  background-color: rgb(5, 5, 5);
 }
 
 main {
@@ -583,13 +588,13 @@ main {
 }
 
 div.uno {
-  width: 95%;
-  background-color: rgb(22, 22, 22);
+  width: 100%;
+  background-color: rgb(12, 12, 12);
   display: flex;
   justify-items: center;
   color: white;
   align-items: center;
-  margin: 5px auto;
+  margin: 10px auto;
   border-radius: 10px;
 }
 
@@ -608,15 +613,14 @@ div .pagina {
 }
 
 div article.articleindex {
-  width: 70%;
-  background-color: black;
-  padding: 15px;
-  margin: auto;
+  width: 80%;
+  padding: 10px;
+  margin: 45px auto;
   transition: all 1s;
   color: white;
 }
 div article.articleindex:hover {
-  width: 75%;
+  width: 85%;
 }
 @media (min-width: 650px) {
   div article.articleindex:hover {
@@ -625,11 +629,11 @@ div article.articleindex:hover {
 }
 @media (min-width: 900px) {
   div article.articleindex:hover {
-    width: 28%;
+    width: 33%;
   }
 }
 div h3 {
-  line-height: 20px;
+  line-height: 50px;
   text-align: center;
 }
 @media (min-width: 650px) {
@@ -645,23 +649,23 @@ div h3 {
 }
 @media (min-width: 650px) and (min-width: 900px) {
   div article.articleindex {
-    width: 25%;
-    margin: 15px auto;
+    width: 30%;
   }
-}
-
-.prueba {
-  width: 300px;
-  background-image: url(../../imagnes/11.jpg);
-  background-position: center;
-  background-size: cover;
-  padding: 10px;
-  text-decoration: none;
-  color: aliceblue;
 }
 
 .imagenindex {
   width: 100%;
+  height: 250px;
+}
+@media (min-width: 650px) {
+  .imagenindex {
+    height: 250px;
+  }
+}
+@media (min-width: 900px) {
+  .imagenindex {
+    height: 200;
+  }
 }
 
 .divaidex {
@@ -670,30 +674,9 @@ div h3 {
   margin: 10px auto;
 }
 
-.aindex {
-  justify-content: space-around;
-  width: 45%;
-  display: flex;
-  flex-wrap: wrap;
-  background-color: white;
-  padding: 2px auto;
-  border-radius: 100px;
-  border: rgb(22, 22, 22) 3px solid;
-  text-decoration: none;
-  text-align: center;
-  color: black;
-  margin: 5px auto;
-}
-
-.aindex:hover {
-  background-color: black;
-  border: rgb(22, 22, 22) 3px solid;
-  color: white;
-}
-
 div.subtitulo {
   width: 100%;
-  background-color: rgb(22, 22, 22);
+  background-color: rgb(12, 12, 12);
   text-align: center;
   padding: 1px;
   line-height: 20px;

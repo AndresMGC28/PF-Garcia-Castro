@@ -1,28 +1,28 @@
 body{
     width: 100%;
-    background-color: $coloruno;
+    background-color: $colorcuatro;
 }
 main{
     width: 100%;
 }
-@mixin inicio{
+@mixin medio{
     @media (min-width:$media-uno){
         @content        
     } 
 }
-@mixin articulos2{
+@mixin grande{
     @media (min-width:$media-dos){
         @content        
     } 
 }
 div.uno{
-    width: 95%;
+    width: 100%;
     background-color:$colortres;
     display: flex;
     justify-items: center;
     color: $colordos;
     align-items: center;
-    margin: 5px auto;
+    margin: 10px auto;
     border-radius: 10px;
 }
 div{
@@ -43,27 +43,26 @@ div{
 
 div{
    article.articleindex{
-        width: 70%;
-        background-color: $coloruno;
-        padding: 15px;
-        margin: auto;
+        width: 80%;
+        padding: 10px;  
+        margin: 45px auto;
         transition: all 1s;
         color: $colordos;
     }
     article.articleindex:hover {
-        width: 75%;
-        @include inicio(){
+        width: 85%;
+        @include medio(){
             width: 45%;
         }
-        @include articulos2(){
-            width: 28%;
+        @include grande(){
+            width: 33%;
         }
     }
     h3{
-        line-height: 20px;
+        line-height: 50px;
         text-align: center;
     }
-    @include inicio(){
+    @include medio(){
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -71,27 +70,23 @@ div{
             width: 40%;
             margin: 15px;
         }
-    @include articulos2(){
+    @include grande(){
         article.articleindex{
-            width: 25%;
-            margin: 15px auto;
-
+            width: 30%;
             }
         }
     }    
 }
-.prueba{
-    width: 300px;
-    background-image: url(../../imagnes/11.jpg);
-    background-position: center;
-    background-size: cover;
-    padding: 10px;
-    text-decoration: none;
-    color: aliceblue;
-}
 //Imagenes 
 .imagenindex{
     width: 100%;
+    height: 250px;
+    @include medio(){
+        height: 250px;
+    }
+    @include grande(){
+        height: 200;
+    }
 }
 .divaidex{
     text-align: center;
@@ -99,26 +94,6 @@ div{
     margin: 10px auto;
 
 }
-.aindex{
-    justify-content:space-around;
-    width: 45%;
-    display: flex;
-    flex-wrap: wrap;
-    background-color:$colordos;
-    padding: 2px auto;
-    border-radius: 100px; 
-    border: $colortres 3px solid;
-    text-decoration: none;
-    text-align: center;
-    color: $coloruno;
-    margin: 5px auto;
-}
-.aindex:hover{
-    background-color:$coloruno;
-    border: $colortres 3px solid;
-    color:$colordos;
-}
-
 //Este lo comparte las demas paginas
 div.subtitulo{
     width: 100%;
@@ -126,7 +101,7 @@ div.subtitulo{
     text-align: center;
     padding: 1px;
     line-height: 20px; 
-    @include inicio(){
+    @include medio(){
         width: 95%;
         margin: 5px auto;
         padding: 10px;

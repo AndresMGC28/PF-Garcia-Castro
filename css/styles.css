@@ -65,6 +65,26 @@ div.redessociales {
   }
 }
 
+.whatsapp {
+  width: 35px;
+  display: inline-block;
+  position: absolute;
+  right: 20px;
+  top: 120px;
+  position: fixed;
+}
+@media (min-width: 650px) {
+  .whatsapp {
+    width: 40px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: auto;
+    bottom: 70px;
+    position: fixed;
+  }
+}
+
 header {
   width: 100%;
   background-color: black;
@@ -609,18 +629,18 @@ div .pagina {
 
 .logo {
   width: 100%;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 div article.articleindex {
-  width: 80%;
+  width: 85%;
   padding: 10px;
   margin: 45px auto;
   transition: all 1s;
   color: white;
 }
 div article.articleindex:hover {
-  width: 85%;
+  width: 90%;
 }
 @media (min-width: 650px) {
   div article.articleindex:hover {
@@ -629,11 +649,20 @@ div article.articleindex:hover {
 }
 @media (min-width: 900px) {
   div article.articleindex:hover {
-    width: 33%;
+    width: 32%;
   }
 }
-div h3 {
-  line-height: 50px;
+div h3.diseño {
+  background-color: rgb(12, 12, 12);
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 5px;
+}
+div p {
+  width: 100%;
+  line-height: 30px;
   text-align: center;
 }
 @media (min-width: 650px) {
@@ -644,7 +673,6 @@ div h3 {
   }
   div article.articleindex {
     width: 40%;
-    margin: 15px;
   }
 }
 @media (min-width: 650px) and (min-width: 900px) {
@@ -666,12 +694,6 @@ div h3 {
   .imagenindex {
     height: 200;
   }
-}
-
-.divaidex {
-  text-align: center;
-  width: 90%;
-  margin: 10px auto;
 }
 
 div.subtitulo {

@@ -38,28 +38,38 @@ div{
 }
 .logo{
     width: 100%;
-    border-radius: 20px;
-}
+    border-radius: 30px;
 
+}
+//Parte dos
 div{
    article.articleindex{
-        width: 80%;
+        width: 85%;
         padding: 10px;  
         margin: 45px auto;
         transition: all 1s;
         color: $colordos;
     }
     article.articleindex:hover {
-        width: 85%;
+        width: 90%;
         @include medio(){
             width: 45%;
         }
         @include grande(){
-            width: 33%;
+            width: 32%;
         }
     }
-    h3{
-        line-height: 50px;
+    h3.diseño{
+        background-color:$colortres;
+        width: 100%;
+        line-height: 30px;
+        text-align: center;
+        font-size: 1.8rem;
+        padding: 5px;
+    }
+    p{
+        width: 100%;
+        line-height: 30px;
         text-align: center;
     }
     @include medio(){
@@ -68,7 +78,6 @@ div{
         flex-wrap: wrap;
         article.articleindex{
             width: 40%;
-            margin: 15px;
         }
     @include grande(){
         article.articleindex{
@@ -87,14 +96,21 @@ div{
     @include grande(){
         height: 200;
     }
-}
-.divaidex{
-    text-align: center;
-    width: 90%;
-    margin: 10px auto;
-
-}
+} 
 //Este lo comparte las demas paginas
+
+
+
+
+
+
+
+
+
+
+
+
+
 div.subtitulo{
     width: 100%;
     background-color: $colortres;

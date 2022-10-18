@@ -16,7 +16,6 @@ footer{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-
     }
 }
 
@@ -29,6 +28,23 @@ div.redessociales{
         width: 20%;
 
     }        
-    }   
+}
+.whatsapp{
+    width: 35px;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 120px;
+    position: fixed;
+    @include piedepagina(){
+        width: 40px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: auto;
+        bottom: 70px;
+        position: fixed;
+    }
+}   
 
 

@@ -97,29 +97,3 @@ div{
         height: 200;
     }
 } 
-//Este lo comparte las demas paginas
-
-
-
-
-
-
-
-
-
-
-
-
-
-div.subtitulo{
-    width: 100%;
-    background-color: $colortres;
-    text-align: center;
-    padding: 1px;
-    line-height: 20px; 
-    @include medio(){
-        width: 95%;
-        margin: 5px auto;
-        padding: 10px;
-   } 
-}

@@ -423,37 +423,57 @@ div .cajados2:hover {
   transform: rotate(360deg);
 }
 
-div.porque {
-  width: 80vw;
-  background-color: rgb(214, 161, 203);
-  background-size: cover;
-  background-position: center;
-  color: white;
-  border: 3px solid white;
+div.subtitulo {
+  width: 100%;
+  background-color: rgb(179, 0, 119);
   text-align: center;
-  padding: 5px;
+  padding: 1px;
+  line-height: 20px;
+}
+@media (min-width: 650px) {
+  div.subtitulo {
+    width: 90%;
+    margin: 5px auto;
+    padding: 10px;
+  }
+}
+
+div.temauno {
+  width: 100%;
+  height: 130px;
+  background-image: url(../../imagnes/a.jpg);
+  background-position: center;
+  background-size: cover;
   margin: 10px auto;
+  display: flex;
+}
+div.temauno h2 {
+  background-color: rgb(12, 12, 12);
+  width: 100%;
+  height: 35%;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  margin: auto;
 }
 
 @media (min-width: 650px) {
   div.trabjosdiseño {
     background-color: rgb(12, 12, 12);
-    border: 3px solid white;
     display: grid;
-    width: 90vw;
-    height: 500px;
-    grid-template-columns: 70% 30%;
+    width: 90%;
+    height: 600px;
+    grid-template-columns: 65% 30%;
     grid-template-areas: "uno dos";
-    gap: 10px;
-    padding: 10px;
-    margin: 20px auto;
+    gap: 5px;
+    margin: 50px auto;
   }
 }
 
 @media (min-width: 650px) {
   div.trabajodiseñouno {
     overflow: auto;
-    gap: 10px;
+    gap: 20px;
     grid-area: uno;
     background: url(../imagnes/espacio100.jpg);
     background-size: cover;
@@ -468,26 +488,23 @@ div.porque {
 }
 
 article.articulodiseñodos {
-  width: 80vw;
-  height: 220px;
-  border: 3px solid white;
-  background-color: rgb(214, 161, 203);
-  padding: 2%;
-  margin: 10px auto;
-  overflow: auto;
+  width: 85%;
+  background-color: rgb(12, 12, 12);
+  padding: 10px;
+  margin: 20px auto;
   text-align: center;
+  color: white;
+  transition: all 3s;
 }
 @media (min-width: 650px) {
   article.articulodiseñodos {
     width: 100%;
-    height: auto;
-    margin: 10px auto;
+    margin: auto;
   }
 }
 
-.imagenpaleta {
-  width: 100%;
-  height: 140px;
+article.articulodiseñodos:hover {
+  border: 3px solid white;
 }
 
 .imagendiseño {
@@ -693,21 +710,6 @@ div p {
 @media (min-width: 900px) {
   .imagenindex {
     height: 200;
-  }
-}
-
-div.subtitulo {
-  width: 100%;
-  background-color: rgb(12, 12, 12);
-  text-align: center;
-  padding: 1px;
-  line-height: 20px;
-}
-@media (min-width: 650px) {
-  div.subtitulo {
-    width: 95%;
-    margin: 5px auto;
-    padding: 10px;
   }
 }
 

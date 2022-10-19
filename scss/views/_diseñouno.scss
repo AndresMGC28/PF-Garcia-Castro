@@ -37,16 +37,16 @@ div.temauno{
 
 div.trabjosdiseño{
     @include diseño(){
-    background-color: $colortres;
+    background-color: $colorcuatro;
     display:grid;
-    width: 90%;
-    height: 600px;
+    width: 95%;
+    height: 450px;
     grid-template-columns: 65% 30%;
     grid-template-areas:
     "uno dos";
     gap: 5px;
     margin: 50px auto;
-}
+    }
 }
 div.trabajodiseñouno{
     @include diseño(){
@@ -56,32 +56,25 @@ div.trabajodiseñouno{
     background: url(../imagnes/espacio100.jpg);
     background-size: cover;
     background-position: center;
-}
+    }
 }
 div.trabajoimagen{
     @include diseño(){
     grid-area: dos;
     }
 }
-
 article.articulodiseñodos{
     width: 85%;
-    background-color: $colortres;
+    background-color: $colordos2;
     padding: 10px;
     margin: 20px auto;
     text-align: center;
     color: $colordos;
-    transition: all 3s;
     @include diseño(){
         width: 100%;
         margin: auto;
     }
 }
-article.articulodiseñodos:hover{
-    border: 3px solid $colordos;
-}
-
-
 //imagenes
 .imagendiseño{
     width: 100%;
@@ -91,7 +84,7 @@ article.articulodiseñodos:hover{
     width: 0%;
     @include diseño()
     {
-        width: 95%;
+        width: 100%;
         height: 100%;
     }
 }

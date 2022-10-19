@@ -441,7 +441,7 @@ div.subtitulo {
 div.temauno {
   width: 100%;
   height: 130px;
-  background-image: url(../../imagnes/a.jpg);
+  background-image: url(../../imagnes/fondo.jpg);
   background-position: center;
   background-size: cover;
   margin: 10px auto;
@@ -475,9 +475,6 @@ div.temauno h2 {
     overflow: auto;
     gap: 20px;
     grid-area: uno;
-    background: url(../imagnes/espacio100.jpg);
-    background-size: cover;
-    background-position: center;
   }
 }
 

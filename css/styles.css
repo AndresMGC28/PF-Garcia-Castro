@@ -166,15 +166,17 @@ li:hover a {
 
 input, textarea {
   background-color: rgb(136, 136, 136);
-  border: 5px solid rgb(179, 0, 119);
   border-radius: 10px;
-  padding: 5px;
-  margin: 5px;
+  padding: 10px;
+  margin: 15px;
+}
+
+input:hover {
+  background-color: white;
 }
 
 select {
   background-color: rgb(136, 136, 136);
-  border: 3px solid rgb(179, 0, 119);
   border-radius: 5px;
   padding: 2px;
   margin: 1px;
@@ -183,12 +185,10 @@ select {
 @media (min-width: 660px) {
   section.secciondecontacto {
     width: 90%;
-    background-color: rgb(34, 0, 34);
     display: grid;
     grid-template-columns: 65% 35%;
     grid-template-areas: "formulario imagenf";
-    gap: 1%;
-    padding: 10px;
+    gap: 10px;
     margin: 20px auto;
   }
 }
@@ -196,19 +196,17 @@ select {
 div.articulodecontacto {
   display: flex;
   flex-direction: column;
-  width: 80%;
-  background-color: rgb(12, 12, 12);
-  background-size: cover;
-  background-position: center;
+  width: 85%;
+  background-color: black;
   color: rgb(136, 136, 136);
-  border: 3px solid rgb(136, 136, 136);
   text-align: center;
-  padding: 5px;
-  margin: 10px auto;
+  padding: 15px;
+  margin: 25px auto;
+  border-radius: 10px;
 }
 @media (min-width: 660px) {
   div.articulodecontacto {
-    width: 100%;
+    width: 90%;
     grid-area: formulario;
   }
 }
@@ -425,34 +423,19 @@ div .cajados2:hover {
 
 div.subtitulo {
   width: 100%;
-  background-color: rgb(179, 0, 119);
+  background: linear-gradient(320deg, rgba(213, 213, 213, 0.7931547619) 0%, rgb(112, 112, 112) 50%, rgb(255, 255, 255) 100%);
   text-align: center;
-  padding: 1px;
-  line-height: 20px;
+}
+div.subtitulo h2 {
+  font-size: 2rem;
 }
 @media (min-width: 660px) {
   div.subtitulo {
-    width: 90%;
-    margin: 5px auto;
-    padding: 10px;
+    padding: 5px;
   }
-}
-
-div.temauno {
-  width: 100%;
-  height: 80px;
-  background: repeating-linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, rgb(136, 136, 136) 1%);
-  margin: 10px auto;
-  display: flex;
-}
-div.temauno h2 {
-  background-color: rgb(12, 12, 12);
-  width: 100%;
-  height: 50%;
-  font-size: 2rem;
-  color: white;
-  text-align: center;
-  margin: auto;
+  div.subtitulo h2 {
+    font-size: 2.8rem;
+  }
 }
 
 @media (min-width: 660px) {
@@ -553,7 +536,7 @@ div.emp h3 {
 }
 
 article.quienes {
-  width: 90%;
+  width: 75%;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 20px;
   margin: 25px auto;
@@ -569,7 +552,7 @@ article.quienes {
 }
 
 article.mision {
-  width: 90%;
+  width: 75%;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 15px;
   margin: 20px auto;
@@ -585,7 +568,7 @@ article.mision {
 }
 
 article.vision {
-  width: 90%;
+  width: 75%;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 15px;
   margin: 20px auto;
@@ -647,8 +630,8 @@ article.imagenv {
 }
 @media (min-width: 900px) {
   .imagenemp {
-    width: 85%;
-    height: 300px;
+    width: 80%;
+    height: 280px;
   }
 }
 

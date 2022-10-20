@@ -1,14 +1,16 @@
 //Formulario 
 input, textarea{
     background-color:$colorcinco;
-    border: 5px solid $colorseis;
     border-radius: 10px;
-    padding: 5px;
-    margin:  5px;    
+    padding: 10px;
+    margin:  15px;    
+}
+input:hover{
+    background-color:$colordos;
+   
 }
 select{
     background-color:$colorcinco;
-    border: 3px solid $colorseis;
     border-radius: 5px;
     padding: 2px;
     margin:  1px;
@@ -22,31 +24,28 @@ select{
 section.secciondecontacto{
     @include contacto(){
         width: 90%;
-        background-color: $colorsiete;
         display: grid;
         grid-template-columns: 65% 35%;
         grid-template-areas:
         "formulario imagenf";
-        gap: 1%;
-        padding: 10px;
+        gap: 10px;
         margin: 20px auto;
 
     }
 }
+
 div.articulodecontacto{
     display: flex;
     flex-direction:column;
-    width: 80%;
-    background-color: $colortres;
-    background-size: cover;
-    background-position: center;
+    width: 85%;
+    background-color: $coloruno;
     color:$colorcinco;
-    border: 3px solid $colorcinco;
     text-align: center;
-    padding: 5px;
-    margin:  10px auto;
+    padding: 15px;
+    margin:  25px auto;
+    border-radius: 10px;
     @include contacto(){
-        width: 100%;    
+        width: 90%;    
         grid-area: formulario;
     }
 }

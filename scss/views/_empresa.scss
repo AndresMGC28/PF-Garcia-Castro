@@ -44,7 +44,7 @@ div.emp{
     }   
 }
 article.quienes{
-    width: 90%;
+    width: 75%;
     background-color:$colordos2;
     padding: 20px;
     margin: 25px auto;
@@ -57,7 +57,7 @@ article.quienes{
     }
 } 
 article.mision{
-    width: 90%;
+    width: 75%;
     background-color:$colordos2;
     padding: 15px;
     margin: 20px auto;
@@ -70,7 +70,7 @@ article.mision{
         }
     }
 article.vision{
-    width: 90%;
+    width: 75%;
     background-color:$colordos2;
     padding: 15px;
     margin: 20px auto;
@@ -117,7 +117,7 @@ article.imagenv{
     height: 300px;
     }
     @include empresados(){
-        width: 85%;
-        height: 300px;
+        width: 80%;
+        height: 280px;
     } 
 }

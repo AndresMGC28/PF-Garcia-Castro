@@ -534,21 +534,21 @@ div.emp {
 }
 div.emp h3 {
   font-size: 1.5rem;
-  line-height: 55px;
+  line-height: 50px;
 }
 @media (min-width: 660px) {
   div.emp h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 900px) {
   div.emp h3 {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
   }
 }
 @media (min-width: 900px) {
   div.emp p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -560,8 +560,8 @@ article.quienes {
 }
 @media (min-width: 660px) {
   article.quienes {
-    width: 90%;
-    height: 300px;
+    width: 100%;
+    height: 320px;
     padding: 5%;
     margin: auto;
     grid-area: quien;
@@ -576,8 +576,8 @@ article.mision {
 }
 @media (min-width: 660px) {
   article.mision {
-    width: 90%;
-    height: 250px;
+    width: 100%;
+    height: 320px;
     padding: 5%;
     margin: auto;
     grid-area: mision;
@@ -592,11 +592,63 @@ article.vision {
 }
 @media (min-width: 660px) {
   article.vision {
-    width: 90%;
-    height: 250px;
+    width: 100%;
+    height: 320px;
     padding: 5%;
     margin: auto;
     grid-area: vision;
+  }
+}
+
+article.imagenq {
+  width: 0%;
+}
+@media (min-width: 660px) {
+  article.imagenq {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    grid-area: imagenq;
+  }
+}
+
+article.imagenm {
+  width: 0%;
+}
+@media (min-width: 660px) {
+  article.imagenm {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    grid-area: imagenm;
+  }
+}
+
+article.imagenv {
+  width: 0%;
+}
+@media (min-width: 660px) {
+  article.imagenv {
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    grid-area: imagenv;
+  }
+}
+
+.imagenemp {
+  width: 0%;
+}
+@media (min-width: 660px) {
+  .imagenemp {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (min-width: 900px) {
+  .imagenemp {
+    width: 85%;
+    height: 300px;
   }
 }
 

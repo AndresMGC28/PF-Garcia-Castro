@@ -17,16 +17,14 @@ div.subtitulo{
 }
 div.temauno{
     width: 100%;
-    height: 130px;
-    background:url(../../imagnes/fondo.jpg);
-    background-position: center;
-    background-size: cover;
+    height: 80px;
+    background: repeating-linear-gradient(to right, $colordos2 0% , $colorcinco 1%);
     margin: 10px auto;
     display: flex;
     h2{
         background-color: $colortres;
         width: 100%;
-        height: 35%;
+        height: 50%;
         font-size: 2rem;
         color:$colordos;
         text-align: center;

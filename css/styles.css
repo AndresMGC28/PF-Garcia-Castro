@@ -19,7 +19,7 @@ h2.segundotitulo {
   font-weight: 500;
   font-size: 1.5rem;
 }
-@media (min-width: 650px) and (max-width: 900px) {
+@media (min-width: 660px) and (max-width: 900px) {
   h2.segundotitulo {
     font-size: 3.5rem;
   }
@@ -44,7 +44,7 @@ footer {
   flex-direction: column;
   text-align: center;
 }
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   footer {
     padding: 8px;
     flex-direction: row;
@@ -59,7 +59,7 @@ div.redessociales {
   justify-content: space-around;
   margin-top: 10px;
 }
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   div.redessociales {
     width: 20%;
   }
@@ -73,7 +73,7 @@ div.redessociales {
   top: 120px;
   position: fixed;
 }
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   .whatsapp {
     width: 40px;
     display: inline-block;
@@ -92,7 +92,7 @@ header {
   top: 0%;
   z-index: 1;
 }
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   header {
     display: flex;
     flex-wrap: wrap;
@@ -116,7 +116,7 @@ a.titulo {
   padding: 5px;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   nav {
     width: 55%;
     display: inline-block;
@@ -139,7 +139,7 @@ ul li {
   border: white 1px solid;
   transition: all 1s;
 }
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   ul li {
     padding: 5px 1px;
   }
@@ -155,7 +155,7 @@ li:hover {
   border-color: white;
   padding: 2px 5px;
 }
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   li:hover {
     padding: 5px 15px;
   }
@@ -165,7 +165,7 @@ li:hover a {
 }
 
 input, textarea {
-  background-color: rgb(214, 161, 203);
+  background-color: rgb(136, 136, 136);
   border: 5px solid rgb(179, 0, 119);
   border-radius: 10px;
   padding: 5px;
@@ -173,14 +173,14 @@ input, textarea {
 }
 
 select {
-  background-color: rgb(214, 161, 203);
+  background-color: rgb(136, 136, 136);
   border: 3px solid rgb(179, 0, 119);
   border-radius: 5px;
   padding: 2px;
   margin: 1px;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   section.secciondecontacto {
     width: 90%;
     background-color: rgb(34, 0, 34);
@@ -200,20 +200,20 @@ div.articulodecontacto {
   background-color: rgb(12, 12, 12);
   background-size: cover;
   background-position: center;
-  color: rgb(214, 161, 203);
-  border: 3px solid rgb(214, 161, 203);
+  color: rgb(136, 136, 136);
+  border: 3px solid rgb(136, 136, 136);
   text-align: center;
   padding: 5px;
   margin: 10px auto;
 }
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   div.articulodecontacto {
     width: 100%;
     grid-area: formulario;
   }
 }
 
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   div.divimagencontacto {
     width: 100%;
     grid-area: imagenf;
@@ -223,7 +223,7 @@ div.articulodecontacto {
 .imagendecontacto {
   width: 0%;
 }
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   .imagendecontacto {
     width: 98%;
     height: 100%;
@@ -236,23 +236,23 @@ div.divtrabajos {
   width: 90%;
   height: 120px;
   display: flex;
-  border: 3px solid rgb(214, 161, 203);
+  border: 3px solid rgb(136, 136, 136);
   padding: 5px;
   margin: 10px auto;
 }
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   div.divtrabajos {
     height: 200px;
   }
 }
 
 .trabajocontacto {
-  border: 1px solid rgb(214, 161, 203);
+  border: 1px solid rgb(136, 136, 136);
   width: 150px;
   height: 80%;
   margin: 10px;
 }
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   .trabajocontacto {
     width: 300px;
     height: 80%;
@@ -269,7 +269,7 @@ div.divpersonaliza {
   padding: 10px;
   margin: 15px auto;
 }
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   div.divpersonaliza {
     width: 70%;
     height: auto;
@@ -282,7 +282,7 @@ div.divpersonaliza {
   height: 200px;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   .divbasestrabajos {
     width: 80%;
     display: flex;
@@ -301,7 +301,7 @@ div.divpersonaliza {
   padding: 10px;
   margin: 10px auto;
 }
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   .articulodetrabajos {
     width: 30%;
   }
@@ -314,7 +314,7 @@ div .cajas {
 
 div .boton1 {
   width: 75%;
-  background-color: rgb(214, 161, 203);
+  background-color: rgb(136, 136, 136);
   border-radius: 10px;
   border: 3px solid black;
   color: black;
@@ -364,10 +364,10 @@ div .cajauno {
   width: 25%;
   height: 80px;
   border: 3px solid black;
-  background-image: linear-gradient(rgb(214, 161, 203), rgb(179, 0, 119), rgb(34, 0, 34));
+  background-image: linear-gradient(rgb(136, 136, 136), rgb(179, 0, 119), rgb(34, 0, 34));
   margin: 10px auto;
 }
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   div .cajauno {
     width: 45%;
   }
@@ -377,10 +377,10 @@ div .cajados {
   width: 25%;
   height: 80px;
   border: 3px solid black;
-  background-image: radial-gradient(rgb(214, 161, 203), rgb(179, 0, 119), rgb(34, 0, 34));
+  background-image: radial-gradient(rgb(136, 136, 136), rgb(179, 0, 119), rgb(34, 0, 34));
   margin: 10px auto;
 }
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   div .cajados {
     width: 45%;
   }
@@ -390,10 +390,10 @@ div .cajatres {
   width: 25%;
   height: 80px;
   border: 3px solid black;
-  background-image: linear-gradient(to left, white 0%, rgb(214, 161, 203) 25%, rgb(179, 0, 119) 50%, rgb(34, 0, 34) 75%);
+  background-image: linear-gradient(to left, white 0%, rgb(136, 136, 136) 25%, rgb(179, 0, 119) 50%, rgb(34, 0, 34) 75%);
   margin: 10px auto;
 }
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   div .cajatres {
     width: 45%;
   }
@@ -403,7 +403,7 @@ div .cajauno1 {
   width: 40%;
   height: 80px;
   border: 3px solid black;
-  background-image: linear-gradient(rgb(214, 161, 203), rgb(179, 0, 119), rgb(34, 0, 34));
+  background-image: linear-gradient(rgb(136, 136, 136), rgb(179, 0, 119), rgb(34, 0, 34));
   margin: 10px auto;
   transition: all 1s;
 }
@@ -415,7 +415,7 @@ div .cajados2 {
   width: 40%;
   height: 80px;
   border: 3px solid black;
-  background-image: radial-gradient(rgb(214, 161, 203), rgb(179, 0, 119), rgb(34, 0, 34));
+  background-image: radial-gradient(rgb(136, 136, 136), rgb(179, 0, 119), rgb(34, 0, 34));
   margin: 10px auto;
   transition: all 1s;
 }
@@ -430,7 +430,7 @@ div.subtitulo {
   padding: 1px;
   line-height: 20px;
 }
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   div.subtitulo {
     width: 90%;
     margin: 5px auto;
@@ -440,24 +440,22 @@ div.subtitulo {
 
 div.temauno {
   width: 100%;
-  height: 130px;
-  background: url(../../imagnes/fondo.jpg);
-  background-position: center;
-  background-size: cover;
+  height: 80px;
+  background: repeating-linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, rgb(136, 136, 136) 1%);
   margin: 10px auto;
   display: flex;
 }
 div.temauno h2 {
   background-color: rgb(12, 12, 12);
   width: 100%;
-  height: 35%;
+  height: 50%;
   font-size: 2rem;
   color: white;
   text-align: center;
   margin: auto;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   div.trabjosdiseño {
     background-color: rgb(5, 5, 5);
     display: grid;
@@ -470,7 +468,7 @@ div.temauno h2 {
   }
 }
 
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   div.trabajodiseñouno {
     overflow: auto;
     gap: 20px;
@@ -478,7 +476,7 @@ div.temauno h2 {
   }
 }
 
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   div.trabajoimagen {
     grid-area: dos;
   }
@@ -492,7 +490,7 @@ article.articulodiseñodos {
   text-align: center;
   color: white;
 }
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   article.articulodiseñodos {
     width: 100%;
     margin: auto;
@@ -507,103 +505,98 @@ article.articulodiseñodos {
 .imagenescaleras {
   width: 0%;
 }
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   .imagenescaleras {
     width: 100%;
     height: 100%;
   }
 }
 
-@media (min-width: 650px) {
+section.seccionempresa {
+  text-align: center;
+}
+@media (min-width: 660px) {
   section.seccionempresa {
-    background-color: rgb(12, 12, 12);
     display: grid;
-    width: 90%;
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 33% 33% 33%;
-    grid-template-areas: "quien imagen" "mision imagen" "vision imagen";
-    gap: 10px;
+    width: 95%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 30% 30%;
+    grid-template-areas: "quien imagenq" "imagenm mision" "vision imagenv";
+    gap: 60px 20px;
     padding: 20px;
     margin: 10px auto;
   }
 }
 
-div.mision {
-  width: 90%;
-  height: 250px;
-  border: 3px solid white;
-  background-color: rgb(214, 161, 203);
-  padding: 2%;
-  margin: 10px auto;
+div.emp {
+  color: white;
+  margin: auto;
 }
-@media (min-width: 650px) {
-  div.mision {
-    width: 90%;
-    height: auto;
-    padding: 5%;
-    margin: auto;
-    grid-area: mision;
+div.emp h3 {
+  font-size: 1.5rem;
+  line-height: 55px;
+}
+@media (min-width: 660px) {
+  div.emp h3 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 900px) {
+  div.emp h3 {
+    font-size: 2.8rem;
+  }
+}
+@media (min-width: 900px) {
+  div.emp p {
+    font-size: 1.6rem;
   }
 }
 
-div.vision {
+article.quienes {
   width: 90%;
-  height: 250px;
-  border: 3px solid white;
-  background-color: rgb(214, 161, 203);
-  padding: 2%;
-  margin: 10px auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin: 25px auto;
 }
-@media (min-width: 650px) {
-  div.vision {
+@media (min-width: 660px) {
+  article.quienes {
     width: 90%;
-    height: auto;
-    padding: 5%;
-    margin: auto;
-    grid-area: vision;
-  }
-}
-
-div.quienes {
-  width: 90%;
-  height: 250px;
-  border: 3px solid white;
-  background-color: rgb(214, 161, 203);
-  padding: 2%;
-  margin: 10px auto;
-}
-@media (min-width: 650px) {
-  div.quienes {
-    width: 90%;
-    height: auto;
+    height: 300px;
     padding: 5%;
     margin: auto;
     grid-area: quien;
   }
 }
 
-div.imagenchico {
-  width: 100%;
-  height: 100%;
-  grid-area: imagen;
-  margin: 5px;
+article.mision {
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  margin: 20px auto;
 }
-@media (min-width: 650px) {
-  div.imagenchico {
-    grid-area: imagen;
+@media (min-width: 660px) {
+  article.mision {
+    width: 90%;
+    height: 250px;
+    padding: 5%;
     margin: auto;
+    grid-area: mision;
   }
 }
 
-img.imagenempresa {
-  width: 0%;
+article.vision {
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  margin: 20px auto;
 }
-@media (min-width: 650px) {
-  img.imagenempresa {
-    border: 3px solid black;
-    width: 100%;
-    height: 100%;
+@media (min-width: 660px) {
+  article.vision {
+    width: 90%;
+    height: 250px;
+    padding: 5%;
     margin: auto;
+    grid-area: vision;
   }
 }
 
@@ -651,7 +644,7 @@ div article.articleindex {
 div article.articleindex:hover {
   width: 90%;
 }
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   div article.articleindex:hover {
     width: 45%;
   }
@@ -674,7 +667,7 @@ div p {
   line-height: 30px;
   text-align: center;
 }
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   div {
     display: flex;
     justify-content: space-around;
@@ -684,7 +677,7 @@ div p {
     width: 40%;
   }
 }
-@media (min-width: 650px) and (min-width: 900px) {
+@media (min-width: 660px) and (min-width: 900px) {
   div article.articleindex {
     width: 30%;
   }
@@ -694,7 +687,7 @@ div p {
   width: 100%;
   height: 250px;
 }
-@media (min-width: 650px) {
+@media (min-width: 660px) {
   .imagenindex {
     height: 250px;
   }

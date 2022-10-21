@@ -229,7 +229,7 @@ select {
 
 div.divtrabajos {
   background-color: rgb(12, 12, 12);
-  overflow-x: auto;
+  overflow: auto;
   width: 90%;
   height: 130px;
   display: flex;

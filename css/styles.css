@@ -167,53 +167,52 @@ li:hover a {
 input, textarea {
   background-color: rgb(136, 136, 136);
   border-radius: 10px;
-  padding: 10px;
-  margin: 15px;
+  padding: 5px;
+  margin: 10px;
 }
 
-input:hover {
+input:hover, textarea:hover {
   background-color: white;
+  color: black;
 }
 
 select {
+  width: 80%;
+  margin: 10px auto;
   background-color: rgb(136, 136, 136);
   border-radius: 5px;
-  padding: 2px;
-  margin: 1px;
+  font-size: 1rem;
 }
 
 @media (min-width: 660px) {
   section.secciondecontacto {
-    width: 90%;
-    display: grid;
-    grid-template-columns: 65% 35%;
-    grid-template-areas: "formulario imagenf";
-    gap: 10px;
-    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto;
   }
 }
 
-div.articulodecontacto {
+.articulodecontacto {
   display: flex;
   flex-direction: column;
-  width: 85%;
+  width: 80%;
   background-color: black;
-  color: rgb(136, 136, 136);
+  color: white;
   text-align: center;
-  padding: 15px;
-  margin: 25px auto;
-  border-radius: 10px;
+  margin: auto;
 }
 @media (min-width: 660px) {
-  div.articulodecontacto {
-    width: 90%;
+  .articulodecontacto {
+    width: 40%;
     grid-area: formulario;
   }
 }
 
 @media (min-width: 660px) {
-  div.divimagencontacto {
-    width: 100%;
+  .divimagencontacto {
+    width: 45%;
+    height: 600px;
+    margin: auto;
     grid-area: imagenf;
   }
 }
@@ -223,44 +222,42 @@ div.articulodecontacto {
 }
 @media (min-width: 660px) {
   .imagendecontacto {
-    width: 98%;
+    width: 100%;
     height: 100%;
   }
 }
 
 div.divtrabajos {
   background-color: rgb(12, 12, 12);
-  overflow: auto;
+  overflow-x: auto;
   width: 90%;
-  height: 120px;
+  height: 130px;
   display: flex;
-  border: 3px solid rgb(136, 136, 136);
-  padding: 5px;
-  margin: 10px auto;
+  margin: 25px auto;
 }
 @media (min-width: 660px) {
   div.divtrabajos {
+    width: 95%;
     height: 200px;
   }
 }
 
 .trabajocontacto {
-  border: 1px solid rgb(136, 136, 136);
-  width: 150px;
-  height: 80%;
-  margin: 10px;
+  width: 200px;
+  height: 90%;
+  margin: auto 10px;
 }
 @media (min-width: 660px) {
   .trabajocontacto {
     width: 300px;
-    height: 80%;
-    margin: 10px;
+    height: 90%;
+    margin: auto;
   }
 }
 
 div.divpersonaliza {
   background-color: rgb(34, 0, 34);
-  border: 3px solid rgb(179, 0, 119);
+  border: 3px solid rgb(192, 192, 192);
   width: 95%;
   color: white;
   text-align: center;
@@ -293,7 +290,7 @@ div.divpersonaliza {
   width: 95%;
   text-align: center;
   background-color: rgb(34, 0, 34);
-  border: 3px solid rgb(179, 0, 119);
+  border: 3px solid rgb(192, 192, 192);
   color: white;
   border-radius: 10px;
   padding: 10px;
@@ -328,7 +325,7 @@ div .boton1:hover {
 }
 div .boton2 {
   width: 75%;
-  background-color: rgb(179, 0, 119);
+  background-color: rgb(192, 192, 192);
   border-radius: 10px;
   border: 3px solid black;
   transition: all 1s;
@@ -362,7 +359,7 @@ div .cajauno {
   width: 25%;
   height: 80px;
   border: 3px solid black;
-  background-image: linear-gradient(rgb(136, 136, 136), rgb(179, 0, 119), rgb(34, 0, 34));
+  background-image: linear-gradient(rgb(136, 136, 136), rgb(192, 192, 192), rgb(34, 0, 34));
   margin: 10px auto;
 }
 @media (min-width: 660px) {
@@ -375,7 +372,7 @@ div .cajados {
   width: 25%;
   height: 80px;
   border: 3px solid black;
-  background-image: radial-gradient(rgb(136, 136, 136), rgb(179, 0, 119), rgb(34, 0, 34));
+  background-image: radial-gradient(rgb(136, 136, 136), rgb(192, 192, 192), rgb(34, 0, 34));
   margin: 10px auto;
 }
 @media (min-width: 660px) {
@@ -388,7 +385,7 @@ div .cajatres {
   width: 25%;
   height: 80px;
   border: 3px solid black;
-  background-image: linear-gradient(to left, white 0%, rgb(136, 136, 136) 25%, rgb(179, 0, 119) 50%, rgb(34, 0, 34) 75%);
+  background-image: linear-gradient(to left, white 0%, rgb(136, 136, 136) 25%, rgb(192, 192, 192) 50%, rgb(34, 0, 34) 75%);
   margin: 10px auto;
 }
 @media (min-width: 660px) {
@@ -401,7 +398,7 @@ div .cajauno1 {
   width: 40%;
   height: 80px;
   border: 3px solid black;
-  background-image: linear-gradient(rgb(136, 136, 136), rgb(179, 0, 119), rgb(34, 0, 34));
+  background-image: linear-gradient(rgb(136, 136, 136), rgb(192, 192, 192), rgb(34, 0, 34));
   margin: 10px auto;
   transition: all 1s;
 }
@@ -413,7 +410,7 @@ div .cajados2 {
   width: 40%;
   height: 80px;
   border: 3px solid black;
-  background-image: radial-gradient(rgb(136, 136, 136), rgb(179, 0, 119), rgb(34, 0, 34));
+  background-image: radial-gradient(rgb(136, 136, 136), rgb(192, 192, 192), rgb(34, 0, 34));
   margin: 10px auto;
   transition: all 1s;
 }

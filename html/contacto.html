@@ -37,33 +37,39 @@
         <section class="secciondecontacto">
             <article class="articulodecontacto">
                 <h3>Formulario</h3>
-                <div></div>
-                <label for="nombre">Nombre</label>
-                <input type="text" placeholder="Andres">
+                <div class="formulario">
+                <label for="nombres">Nombre</label>
+                <input id="nombres" type="text" name="nombre" placeholder="Andres" autofocus required>
+
                 <label for="apellidos">Apellidos</label>
-                <input type="text" placeholder="Garcia">
+                <input id="apellidos" type="text" name="apellido" placeholder="Garcia" required>
+
                 <label for="correo">Correo</label>
-                <input type="email" placeholder="@gmail">
+                <input id="correo" type="email" name="email" placeholder="@gmail" required>
+                
                 <label for="fecha">Fecha</label>
-                <input type="date">
+                <input id="fecha" type="date" name="fecha">
+                
                 <label for="asunto">Asunto</label>
-                <select name="motivo" id="motivo" required>
+                <select name="asunto" id="asunto" required>
                     <option value="Diseño Web">Diseño web</option>
-                    <option value="Base de Datos">Cotizacion</option>
+                    <option value="Base de Datos">Cotización</option>
                     <option value="Preguntas">Preguntas</option>
-                    <option value="Comprar">Comprar</option>
                     <option value="Reseña">Reseña</option>
                 </select>
+
                 <textarea name="cometarios" id="cometarios" cols="30" rows="8"></textarea>
                 <label for="noticias ">¿Quieres recibir noticias?</label>
-                <input type="checkbox">
-                <input type="submit">
+                <input  id="noticias" type="checkbox" name="noticias">
+
+                <input type="submit" value="Enviar" class="env">
+            </div>
             </article>
             <div class="divimagencontacto">
                 <img src="../imagenes/2.jpg" alt="escritorio" class="imagendecontacto">
             </div>
         </section>
-        <div class="subtitulo">
+        <div class="titulo3">
             <h2>Observa nuestros trabajos</h2>
         </div>
         <div>

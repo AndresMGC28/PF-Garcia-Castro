@@ -72,6 +72,7 @@ div.redessociales {
   right: 20px;
   top: 120px;
   position: fixed;
+  transition: all 1s;
 }
 @media (min-width: 660px) {
   .whatsapp {
@@ -83,6 +84,10 @@ div.redessociales {
     bottom: 70px;
     position: fixed;
   }
+}
+
+.whatsapp:hover {
+  transform: rotatey(360deg);
 }
 
 header {
@@ -279,29 +284,72 @@ div.titulo3 h3 {
   }
 }
 
+.prueba {
+  width: 95%;
+  margin: 10px auto;
+  padding: 20px;
+  color: white;
+}
+@media (min-width: 660px) {
+  .prueba {
+    width: 45%;
+    margin: 15px 50px;
+  }
+}
+.prueba h3 {
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+@media (min-width: 660px) {
+  .prueba h3 {
+    font-size: 2.5rem;
+  }
+}
+.prueba p {
+  font-size: 1.4rem;
+  text-align: justify;
+}
+@media (min-width: 660px) {
+  .prueba p {
+    font-size: 2rem;
+  }
+}
+.prueba div {
+  width: 120px;
+  background-color: white;
+  margin: 20px auto;
+  text-align: center;
+  padding: 10px;
+  border-radius: 20px;
+  transition: all 1s;
+}
+.prueba div:hover {
+  background-color: rgb(12, 12, 12);
+  border: solid 1px white;
+}
+.prueba a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  transition: all 1s;
+}
+.prueba a:hover {
+  color: white;
+}
+
 div.imagend2 {
-  width: 100%;
-  margin: auto;
+  width: 90%;
+  display: inline-block;
+  position: absolute;
+  z-index: -1;
+  right: 5px;
+  top: 400px;
 }
 
 .logonew {
   width: 100%;
-  height: 350px;
-}
-@media (min-width: 660px) {
-  .logonew {
-    width: 100%;
-    height: 620px;
-  }
-}
-
-.prueba {
-  width: 50%;
-  text-align: justify;
-  color: white;
-}
-.prueba p {
-  font-size: 2rem;
+  height: 400px;
 }
 
 div.subtitulo {

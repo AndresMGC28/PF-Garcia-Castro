@@ -36,6 +36,7 @@ div.redessociales{
     right: 20px;
     top: 120px;
     position: fixed;
+    transition: all 1s;
     @include piedepagina(){
         width: 40px;
         display: inline-block;
@@ -46,5 +47,7 @@ div.redessociales{
         position: fixed;
     }
 }   
-
+.whatsapp:hover{
+    transform: rotatey(360deg);
+}
 

@@ -3,29 +3,50 @@
         @content        
     } 
 }
+@mixin diseñodosg{
+    @media (min-width:$media-dos){
+        @content        
+    } 
+}
 .prueba{
     width: 95%;
     margin:  10px auto;
-    padding: 20px;
+    padding: 10px;
     color: $colordos;
     @include diseñodos(){
-        width: 45%;
-        margin: 15px 50px;
-    } 
+        width: 65%;
+        margin: 10px 10px;
+    }
+    @include diseñodosg(){
+        width: 60%;
+        margin: 20px 50px;
+    }
+
     h3{
         line-height: 50px;
         text-align: center;
         font-size: 1.8rem;
         @include diseñodos(){
+            line-height: 65px;
             font-size: 2.5rem;
         } 
+        @include diseñodosg(){
+            line-height: 80px;
+            font-size: 3rem;
+        } 
+
     }
     p{
         font-size: 1.4rem;
         text-align: justify;
         @include diseñodos(){
-            font-size: 2rem;
+            font-size: 1.8rem;
+        }
+        @include diseñodosg(){
+            line-height: 45px;
+            font-size: 2.2rem;
         } 
+  
     }
     div{
         width: 120px;
@@ -40,7 +61,6 @@
     div:hover{
         background-color:$colortres;
         border: solid 1px $colordos;
-        
     }
     a{   
         font-size: 1.5rem;
@@ -61,13 +81,18 @@ div.imagend2{
     right: 5px;
     top: 400px;
     @include diseñodos(){
-        width: 65%;
-        top: 300px;
+        width: 45%;
+        top: 200px;
+}
+    @include diseñodosg(){
+        width: 70%;
+        top: 280px;
 }
 }
 .logonew{
 width: 100%;
 height: 400px;
+filter: opacity(.5);
 @include diseñodos(){
 height: 550px;
 }

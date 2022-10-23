@@ -242,7 +242,7 @@ div.formulario {
 }
 
 div.divtrabajos {
-  background-color: rgb(12, 12, 12);
+  background-color: rgb(10, 10, 10);
   overflow: auto;
   width: 90%;
   height: 130px;
@@ -287,13 +287,19 @@ div.titulo3 h3 {
 .prueba {
   width: 95%;
   margin: 10px auto;
-  padding: 20px;
+  padding: 10px;
   color: white;
 }
 @media (min-width: 660px) {
   .prueba {
-    width: 45%;
-    margin: 15px 50px;
+    width: 65%;
+    margin: 10px 10px;
+  }
+}
+@media (min-width: 900px) {
+  .prueba {
+    width: 60%;
+    margin: 20px 50px;
   }
 }
 .prueba h3 {
@@ -303,7 +309,14 @@ div.titulo3 h3 {
 }
 @media (min-width: 660px) {
   .prueba h3 {
+    line-height: 65px;
     font-size: 2.5rem;
+  }
+}
+@media (min-width: 900px) {
+  .prueba h3 {
+    line-height: 80px;
+    font-size: 3rem;
   }
 }
 .prueba p {
@@ -312,7 +325,13 @@ div.titulo3 h3 {
 }
 @media (min-width: 660px) {
   .prueba p {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 900px) {
+  .prueba p {
+    line-height: 45px;
+    font-size: 2.2rem;
   }
 }
 .prueba div {
@@ -325,7 +344,7 @@ div.titulo3 h3 {
   transition: all 1s;
 }
 .prueba div:hover {
-  background-color: rgb(12, 12, 12);
+  background-color: rgb(10, 10, 10);
   border: solid 1px white;
 }
 .prueba a {
@@ -348,14 +367,21 @@ div.imagend2 {
 }
 @media (min-width: 660px) {
   div.imagend2 {
-    width: 65%;
-    top: 300px;
+    width: 45%;
+    top: 200px;
+  }
+}
+@media (min-width: 900px) {
+  div.imagend2 {
+    width: 70%;
+    top: 280px;
   }
 }
 
 .logonew {
   width: 100%;
   height: 400px;
+  filter: opacity(0.5);
 }
 @media (min-width: 660px) {
   .logonew {
@@ -382,7 +408,7 @@ div.subtitulo h2 {
 
 @media (min-width: 660px) {
   div.trabjosdiseño {
-    background-color: rgb(5, 5, 5);
+    background-color: rgb(15, 15, 15);
     display: grid;
     width: 95%;
     height: 450px;
@@ -579,7 +605,7 @@ article.imagenv {
 
 body {
   width: 100%;
-  background-color: rgb(5, 5, 5);
+  background-color: rgb(15, 15, 15);
 }
 
 main {
@@ -588,7 +614,7 @@ main {
 
 div.uno {
   width: 100%;
-  background-color: rgb(12, 12, 12);
+  background-color: rgb(10, 10, 10);
   display: flex;
   justify-items: center;
   color: white;
@@ -632,7 +658,7 @@ div article.articleindex:hover {
   }
 }
 div h3.diseño {
-  background-color: rgb(12, 12, 12);
+  background-color: rgb(10, 10, 10);
   width: 100%;
   line-height: 30px;
   text-align: center;

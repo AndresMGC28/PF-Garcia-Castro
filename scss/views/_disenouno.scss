@@ -1,4 +1,4 @@
-@mixin diseño{
+@mixin diseno{
     @media (min-width:$media-uno){
         @content        
     } 
@@ -11,15 +11,16 @@ div.subtitulo{
     h2{
         font-size: 2rem;
     } 
-    @include diseño(){
+    @include diseno(){
         padding: 2px;
        h2{
         font-size: 2.5rem;
        }
    } 
 }
-div.trabjosdiseño{
-    @include diseño(){
+div.trabajosdiseno{
+    @include diseno(){
+    border-radius: 10px;
     background-color: $colorcuatro;
     display:grid;
     width: 95%;
@@ -31,39 +32,65 @@ div.trabjosdiseño{
     margin: 50px auto;
     }
 }
-div.trabajodiseñouno{
-    @include diseño(){
+div.trabajodisenouno{
+    @include diseno(){
     overflow: auto;
     gap: 20px;
     grid-area:uno;
     }
 }
 div.trabajoimagen{
-    @include diseño(){
+    @include diseno(){
     grid-area: dos;
     }
 }
-article.articulodiseñodos{
+article.articulodisenodos{
     width: 85%;
     background-color: $colordos2;
+    border-radius: 10px;
     padding: 10px;
     margin: 20px auto;
     text-align: center;
     color: $colordos;
-    @include diseño(){
+    @include diseno(){
         width: 100%;
         margin: auto;
     }
 }
+div.cot{
+    text-align: center;
+    padding:  20px;
+    margin: auto;
+    a{  
+        margin: auto;
+        background-color: $colordos;
+        border-radius: 60px;
+        padding: 5px 20px; 
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: $coloruno;
+        transition: all 1s;
+    }
+    a:hover{
+        color: $colordos;
+        background-color: $coloruno;
+        border-radius: 60px;
+        padding: 10px 50px; 
+        font-size: 2rem;
+
+    }
+}
 //imagenes
-.imagendiseño{
+.imagendiseno{
+    border-radius: 20px;
     width: 100%;
     height: 100%;
 }
 .imagenescaleras{
     width: 0%;
-    @include diseño()
+    @include diseno()
     {
+        border-radius: 20px;
         width: 100%;
         height: 100%;
     }

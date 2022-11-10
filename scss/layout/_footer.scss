@@ -38,12 +38,12 @@ div.redessociales{
     position: fixed;
     transition: all 1s;
     @include piedepagina(){
-        width: 40px;
+        width: 50px;
         display: inline-block;
         position: absolute;
-        right: 15px;
+        right: 10px;
         top: auto;
-        bottom: 70px;
+        bottom: 50px;
         position: fixed;
     }
 }   
